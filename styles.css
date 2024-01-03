@@ -9,12 +9,12 @@ body{
     
 }
 .gif{
-    width: 12rem;
+    width: 24rem;
     margin: 2rem;
 }
 .imgcontact{
     display: flexbox;
-    width: 1rem;
+    width: 3rem;
     padding: 1rem;
 }
 
