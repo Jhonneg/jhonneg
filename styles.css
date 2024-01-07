@@ -1,13 +1,17 @@
 body{
     margin: 0;
 }
-.title{
-    background-color: black;
-    color: aliceblue;
+.navbar{
+    background-color:purple;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 2px;
-    
-}
+    padding: 1px;
+    font-weight: bold;
+    }
+    .navbar li{
+    display: flexbox;
+    list-style: none; 
+    }
 .gif{
     width: 24rem;
     margin: 2rem;
@@ -26,10 +30,14 @@ body{
     display: flexbox;
     text-align: center;
 }
+.footer{
+    text-align: center;
+    padding: 1em;
+}
+
 @media screen and (max-width:600px){
     .gif
     {
         width: 50%;
     }
-    
 }
