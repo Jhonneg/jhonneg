@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
+    text-decoration: none;
 }
 h1{
     text-transform: uppercase;
@@ -14,25 +15,26 @@ h1{
     font-weight: bold;
     }
     .navbar li{
-    display: flexbox;
-    list-style: none; 
+    display: inline-block;
+    list-style: none;
     }
 .gif{
     width: 24rem;
     margin: 2rem;
     z-index: -1;
-    position: absolute;
+    position: sticky;
     opacity: 5%;
+    display: flex;
+    justify-content: center;
+}
+.projetos{
+    margin: 10px;
+    padding: 200px;
 }
 .imgcontact{
     display: flexbox;
     width: 3rem;
     padding: 1rem;
-}
-
-.gifdiv{
-    display: flex;
-    justify-content: center;
 }
 .divcontact{
     display: flexbox;
