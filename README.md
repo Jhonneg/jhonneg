@@ -13,6 +13,9 @@ I have a genuine interest graphics design in web browsers, from 2D basic animati
 
 Games are also something that's been part of my life, since you can get all these things together with web development, i've found what i'm passionate about. 
 
+# Skills
+[![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux)](https://skillicons.dev)
+
 # Projects
 
-[CSS Mario](https://jonee2.github.io/Handcrafted-CSS-Mario/)
+[CSS-8-Bit-Mario](https://jonee2.github.io/Handcrafted-CSS-Mario/)
