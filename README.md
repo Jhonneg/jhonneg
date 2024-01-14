@@ -18,4 +18,4 @@ Games are also something that's been part of my life, since you can get all thes
 
 # Projects
 
-[CSS-8-Bit-Mario](https://jonee2.github.io/Handcrafted-CSS-Mario/)
+[Handcrafted 8-bit Pure CSS Art](https://jonee2.github.io/Handcrafted-CSS-8-bit-art/)
