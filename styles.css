@@ -19,17 +19,15 @@ h1{
     list-style: none;
     }
 .gif{
-    width: 24rem;
-    margin: 2rem;
+    width: 100%;
     z-index: -1;
-    position: sticky;
+    position: fixed;
     opacity: 5%;
     display: flex;
-    justify-content: center;
 }
 .projetos{
     margin: 10px;
-    padding: 200px;
+    padding-bottom: 200px;
 }
 .imgcontact{
     display: flexbox;
