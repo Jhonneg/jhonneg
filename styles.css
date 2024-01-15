@@ -18,33 +18,31 @@ h1{
     margin: 10px;
     padding-bottom: 700px;
 }
-.card.mario{
+.card{
     border: #3C486B;
     float: left;
-    width: 33%;
+    width: 500px;
 }
-.card img{
+.left img{
     height: 200px;
     float: left;
 }
-.imgcontact{
-    width: 2rem;
-}
-.divcontact{
-    display: flexbox;
-    text-align: center;
-}
 .footer{
-    float: none;
     text-align: center;
     padding: 5px;
-    text-align: center;
     font-weight: bold;
     background-color: #3C486B;
 }
 .footer li{
     display: inline-block;
+    text-decoration: none;
     list-style: none;
+}
+footer p{
+    color: #F9F5EB;
+}
+footer img{
+ height: 30px;
 }
 
 @media screen and (max-width:600px){
