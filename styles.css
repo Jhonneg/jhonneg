@@ -3,44 +3,48 @@ body{
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     text-decoration: none;
+    background-color: #F9F5EB;
 }
 h1{
     text-transform: uppercase;
 }
-.navbar{
-    background-color:purple;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 1px;
-    font-weight: bold;
-    }
-    .navbar li{
-    display: inline-block;
-    list-style: none;
-    }
-.gif{
-    width: 100%;
-    z-index: -1;
-    position: fixed;
-    opacity: 5%;
-    display: flex;
+.main-title{
+    font-size:  5rem;
+    background-color: #3C486B;
+    margin: 0;
+    color: #F9F5EB;
 }
-.projetos{
+.main{
     margin: 10px;
-    padding-bottom: 200px;
+    padding-bottom: 700px;
+}
+.card.mario{
+    border: #3C486B;
+    float: left;
+    width: 33%;
+}
+.card img{
+    height: 200px;
+    float: left;
 }
 .imgcontact{
-    display: flexbox;
-    width: 3rem;
-    padding: 1rem;
+    width: 2rem;
 }
 .divcontact{
     display: flexbox;
     text-align: center;
 }
 .footer{
+    float: none;
     text-align: center;
-    padding: 1em;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #3C486B;
+}
+.footer li{
+    display: inline-block;
+    list-style: none;
 }
 
 @media screen and (max-width:600px){
