@@ -20,7 +20,7 @@ Games are also something that's been part of my life, since you can get all thes
 [![My Skills](https://skillicons.dev/icons?i=js,mongodb,nodejs,express,postgres,react,tailwind)](https://skillicons.dev)
 
 # Will learn in the future
-[![My Skills](https://skillicons.dev/icons?i=p5js,tailwind,blender,firebase,threejs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=p5js,blender,firebase,threejs)](https://skillicons.dev)
 
 # Projects
 
