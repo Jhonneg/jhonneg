@@ -14,13 +14,13 @@ I have a genuine interest graphics design in web browsers, from 2D basic animati
 Games are also something that's been part of my life, since you can get all these things together with web development, i've found what i'm passionate about. 
 
 # Current tech stack
-[![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux,bootstrap)](https://skillicons.dev)
 
 # Currently learning
-[![My Skills](https://skillicons.dev/icons?i=js,mongodb,nodejs,express,postgres,react,tailwind,bootstrap)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,mongodb,nodejs,express,postgres,react,tailwind)](https://skillicons.dev)
 
 # Will learn in the future
-[![My Skills](https://skillicons.dev/icons?i=p5js,tailwind,blender,firebase,threejs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=p5js,blender,firebase,threejs)](https://skillicons.dev)
 
 # Projects
 
