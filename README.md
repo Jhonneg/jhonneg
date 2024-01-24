@@ -5,13 +5,13 @@
 
 # About me
 
-Hello, my name is Jhonne and web development is my main focus. 
+Hello, my name is Jhonne and front end development is my main focus. 
 
-Being able to create web pages from scratch and create true works of visual art with lines of code is something that fascinated me about web development, currently i'm learning the basics(HTML, CSS, Javascript and React) but in the future i plan to focus on Javascript graphics libraries, like Three.js.
+Being able to create true works of visual art with lines of code is something that fascinated me about web development, currently i'm learning the basics(HTML, CSS, Javascript and React) but in the future i plan to focus on Javascript graphics libraries, like Three.js.
 
-I have a genuine interest graphics design in web browsers, from 2D basic animations to 3D interactive interfaces, how like buttons pop up when you click them to full fledge javascript games with interactive 3D menus.
+I have a genuine interest visual design in web browsers, from user-friendly UIs to interactive animations, from mobile-first websites to 3D background animations.
 
-Games are also something that's been part of my life, since you can get all these things together with web development, i've found what i'm passionate about. 
+Since you can marry all these things together with front-end development, plus build a career on top of that, i've found what i'm passionate about. 
 
 # Current tech stack
 [![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux,bootstrap)](https://skillicons.dev)
@@ -25,3 +25,5 @@ Games are also something that's been part of my life, since you can get all thes
 # Projects
 
 [Handcrafted 8-bit Pure CSS Art](https://jonee2.github.io/Handcrafted-CSS-8-bit-art/)
+
+[Lawfirm landing Page](https://jonee2.github.io/better-call-saul/)
