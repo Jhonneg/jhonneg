@@ -26,4 +26,4 @@ Since you can marry all these things together with front-end development, plus b
 
 [Handcrafted 8-bit Pure CSS Art](https://jonee2.github.io/Handcrafted-CSS-8-bit-art/)
 
-[Lawfirm landing Page](https://jonee2.github.io/better-call-saul/)
+[Lawfirm Landing Page](https://jonee2.github.io/better-call-saul/)
