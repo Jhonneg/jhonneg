@@ -14,7 +14,7 @@ I have a genuine interest visual design in web browsers, from user-friendly UIs 
 Since you can marry all these things together with front-end development, plus build a career on top of that, i've found what i'm passionate about. 
 
 # Current tech stack
-[![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux,bootstrap)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux,bootstrap,sass)](https://skillicons.dev)
 
 # Currently learning
 [![My Skills](https://skillicons.dev/icons?i=js,mongodb,nodejs,express,postgres,react,tailwind)](https://skillicons.dev)
