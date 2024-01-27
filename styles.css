@@ -9,12 +9,16 @@ h1{
     text-transform: uppercase;
 }
 .header{
-    padding: 300px;
-    position: relative;
+    padding: 120px;
 }
 .header img{
     width: 30px;
-    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.aboutme img{
+    width: 200px;
+    position: static;
 }
 .main-title{
     font-size:  5rem;
@@ -23,10 +27,13 @@ h1{
     color: #F9F5EB;
 }
 .sub-title{
-    display: inline;
+    background-color: #3C486B;
+    margin: 0;
+    color: #F9F5EB;
+}
+span{
     background-color: #3C486B;
     color: #F9F5EB;
-
 }
 .main{
     margin: 10px;
