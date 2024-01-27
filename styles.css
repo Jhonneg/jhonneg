@@ -8,11 +8,20 @@ body{
 h1{
     text-transform: uppercase;
 }
+.header{
+    padding: 300px;
+}
 .main-title{
     font-size:  5rem;
     background-color: #3C486B;
     margin: 0;
     color: #F9F5EB;
+}
+.sub-title{
+    display: inline;
+    background-color: #3C486B;
+    color: #F9F5EB;
+
 }
 .main{
     margin: 10px;
