@@ -10,6 +10,11 @@ h1{
 }
 .header{
     padding: 300px;
+    position: relative;
+}
+.header img{
+    width: 30px;
+    position: absolute;
 }
 .main-title{
     font-size:  5rem;
