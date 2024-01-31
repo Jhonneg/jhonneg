@@ -16,7 +16,7 @@ Since you can marry all these things together with front-end development, plus b
 
 # Current tech stack
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux,bootstrap,sass,js)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux,bootstrap,js)](https://skillicons.dev)
 
 # Currently learning
 
