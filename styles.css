@@ -36,7 +36,9 @@ span{
     color: #F9F5EB;
 }
 .main{
-    display: grid ;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-columns: repeat(3,500px);
     margin: 10px;
     padding-bottom: 700px;
 }
