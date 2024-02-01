@@ -20,7 +20,7 @@ Since you can marry all these things together with front-end development, plus b
 
 # Currently learning
 
-[![My Skills](https://skillicons.dev/icons?i=mongodb,nodejs,express,postgres,react,tailwind,nextjs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=mongodb,nodejs,express,postgres,react,tailwind,nextjs,ts)](https://skillicons.dev)
 
 # Will learn in the future
 
