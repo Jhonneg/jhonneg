@@ -37,15 +37,21 @@ span{
 }
 .main{
     display: grid;
-    grid-template-columns: repeat(3,100px);
-    grid-template-columns: repeat(3,500px);
-    margin: 10px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3,auto);
+    margin-left: 100px;
     padding-bottom: 700px;
 }
 .card{
     border: #3C486B;
     width: 500px;
     margin-right:100px ;
+}
+.lawgif:hover{
+    content:url(images/Screencast\ from\ 01-24-2024\ 10_11_32\ AM.gif);
+}
+.rpsgif:hover {
+    content:url(images/Screencastfrom02-01-2024090133AM-ezgif.com-video-to-gif-converter.gif);
 }
 .left img{
     height: 200px;
