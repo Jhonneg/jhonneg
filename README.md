@@ -32,4 +32,4 @@ Since you can marry all these things together with front-end development, plus b
 
 [Lawfirm Landing Page](https://jonee2.github.io/better-call-saul/)
 
-[Rock-Paper-Scissor Game](jonee2.github.io/rock-paper-scissor/)
+[Rock-Paper-Scissor Game](https://jonee2.github.io/rock-paper-scissor/)
