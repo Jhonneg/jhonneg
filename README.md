@@ -20,14 +20,8 @@ Since you can marry all these things together with front-end development, plus b
 
 # Currently learning
 
-[![My Skills](https://skillicons.dev/icons?i=mongodb,nodejs,express,postgres,react,tailwind,nextjs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=mongodb,nodejs,express,postgres,react,tailwind,ts)](https://skillicons.dev)
 
 # Will learn in the future
 
-[![My Skills](https://skillicons.dev/icons?i=blender,threejs)](https://skillicons.dev)
-
-# Projects
-
-[Handcrafted 8-bit Pure CSS Art](https://jonee2.github.io/Handcrafted-CSS-8-bit-art/)
-
-[Lawfirm Landing Page](https://jonee2.github.io/better-call-saul/)
+[![My Skills](https://skillicons.dev/icons?i=blender,threejs,nextjs)](https://skillicons.dev)
