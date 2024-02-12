@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 body{
     margin: 0;
     font-family: 'Roboto Mono', monospace;
@@ -39,19 +40,14 @@ span{
     display: grid;
     grid-template-columns: repeat(3,auto);
     grid-template-columns: repeat(3,auto);
+    gap: 100px;
     margin-left: 100px;
-    padding-bottom: 700px;
+    padding-bottom: 200px;
 }
 .card{
     border: #3C486B;
     width: 500px;
     margin-right:100px ;
-}
-.lawgif:hover{
-    content:url(images/Screencast\ from\ 01-24-2024\ 10_11_32\ AM.gif);
-}
-.rpsgif:hover {
-    content:url(images/Screencastfrom02-01-2024090133AM-ezgif.com-video-to-gif-converter.gif);
 }
 .left img{
     height: 200px;
