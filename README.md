@@ -12,6 +12,8 @@ Being able to create true works of visual art with lines of code is something th
 
 I have a genuine interest visual design in web browsers, from user-friendly UIs to interactive animations, from mobile-first websites to 3D background animations.
 
+Plus the possibility of putting in practice problem solving skills, searching for pratical solutions and having a creative outlet allows me to grow as a person.
+
 Since you can marry all these things together with front-end development, plus build a career on top of that, i've found what i'm passionate about.
 
 # Current tech stack
