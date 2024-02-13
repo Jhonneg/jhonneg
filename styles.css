@@ -39,7 +39,7 @@ span{
 .main{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
     gap: 100px;
     margin-left: 100px;
     padding-bottom: 200px;
@@ -75,4 +75,13 @@ footer img{
     {
         width: 50%;
     }
+    .main {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 100px;
+    margin-left: 0px;
+    }
+    
+
 }
