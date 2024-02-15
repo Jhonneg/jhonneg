@@ -69,6 +69,10 @@ footer p{
 footer img{
  height: 30px;
 }
+.para{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 @media screen and (max-width:600px){
     .gif
