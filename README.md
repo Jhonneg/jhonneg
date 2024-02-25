@@ -27,3 +27,5 @@ Since you can marry all these things together with front-end development, plus b
 # Will learn in the future
 
 [![My Skills](https://skillicons.dev/icons?i=blender,threejs,nextjs)](https://skillicons.dev)
+
+[Portfolio](https://jonee2.is-a.dev/)
