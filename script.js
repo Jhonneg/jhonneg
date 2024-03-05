@@ -27,7 +27,7 @@ const ctx = canvas.getContext("2d");
 const ballRadius = 10;
 let x = canvas.width / 2;
 let y = canvas.height - 30;
-let dx = -5;
+let dx = -3;
 let dy = 2;
 const paddleHeight = 10;
 const paddleWidth = 75;
@@ -115,6 +115,7 @@ function drawLives() {
     ctx.fillText(`Lives: ${lives}`, canvas.width - 65, 20);
 }
 function draw() {
+    var _a;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBricks();
     drawBall();
@@ -141,12 +142,13 @@ function draw() {
                 ctx.fillStyle = "#0095DD";
                 ctx.fillText('Game over', canvas.width - 270, 190);
                 clearInterval(interval);
+                ((_a = document.querySelector('#canvasbtn')) === null || _a === void 0 ? void 0 : _a.textContent) == 'Restart?';
             }
             else {
                 x = canvas.width / 2;
                 y = canvas.height - 30;
                 dx = -3;
-                dy = 3;
+                dy = 2;
                 paddleX = (canvas.width - paddleWidth) / 2;
             }
         }
@@ -183,20 +185,14 @@ function startGame() {
     ;
     draw();
 }
-document.addEventListener("keydown", (event) => {
-    const Enter = event.key;
-    if (Enter === 'Enter') {
-        startGame();
-    }
-});
 document.querySelector("button").addEventListener("click", function () {
     startGame();
     this.disabled = true;
 });
-document.addEventListener("mousemove", mouseMoveHandler, false);
-function mouseMoveHandler(e) {
-    const relativeX = e.clientX - canvas.offsetLeft;
-    if (relativeX > 0 && relativeX < canvas.width) {
-        paddleX = relativeX - paddleWidth / 2;
-    }
-}
+// document.addEventListener("mousemove", mouseMoveHandler, false);
+// function mouseMoveHandler(e:any) {
+//   const relativeX = e.clientX - canvas.offsetLeft;
+//   if (relativeX > 0 && relativeX < canvas.width) {
+//     paddleX = relativeX - paddleWidth / 2;
+//   }
+// }

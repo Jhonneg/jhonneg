@@ -30,7 +30,7 @@ const ctx = canvas.getContext("2d");
 const ballRadius = 10;
 let x = canvas.width / 2;
 let y = canvas.height - 30;
-let dx = -5;
+let dx = -3;
 let dy = 2;
 const paddleHeight = 10;
 const paddleWidth = 75;
@@ -146,12 +146,13 @@ if (!lives) {
   ctx.font = "16px Arial";
   ctx.fillStyle = "#0095DD";
   ctx.fillText('Game over', canvas.width- 270, 190)
-  clearInterval(interval); 
+	clearInterval(interval); 
+	document.querySelector('#canvasbtn')?.textContent == 'Restart?'
   } else {
     x = canvas.width / 2;
     y = canvas.height - 30;
     dx = -3;
-    dy = 3;
+    dy = 2;
     paddleX = (canvas.width - paddleWidth) / 2;
         }
       }
@@ -187,23 +188,16 @@ function startGame() {
   draw();
 }
 
-document.addEventListener("keydown", (event) => {
-  const Enter = event.key 
-  if (Enter === 'Enter') {
-    startGame();
-  }
-});
-
 document.querySelector("button").addEventListener("click", function () {
   startGame();
   this.disabled = true;
 })
 
-document.addEventListener("mousemove", mouseMoveHandler, false);
+// document.addEventListener("mousemove", mouseMoveHandler, false);
 
-function mouseMoveHandler(e:any) {
-  const relativeX = e.clientX - canvas.offsetLeft;
-  if (relativeX > 0 && relativeX < canvas.width) {
-    paddleX = relativeX - paddleWidth / 2;
-  }
-}
+// function mouseMoveHandler(e:any) {
+//   const relativeX = e.clientX - canvas.offsetLeft;
+//   if (relativeX > 0 && relativeX < canvas.width) {
+//     paddleX = relativeX - paddleWidth / 2;
+//   }
+// }
