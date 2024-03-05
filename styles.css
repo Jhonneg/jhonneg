@@ -86,14 +86,15 @@ footer img{
     font-weight: bold;
 }
 #canvasbtn{
-    width: 100px;
+    width: 150px;
     height: 30px;
     border-radius: 10px;
     border-style: none;
     background: var(--main-color);
     border: var(--sub-color) solid 1px;
     color: var(--sub-color);
-    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
 }
 #canvasbtn:hover{
     cursor: pointer;
