@@ -31,7 +31,7 @@ const ballRadius = 10;
 let x = canvas.width / 2;
 let y = canvas.height - 30;
 let dx = -3;
-let dy = 2;
+let dy = 4;
 const paddleHeight = 10;
 const paddleWidth = 75;
 let paddleX = (canvas.width - paddleWidth) / 2;
@@ -147,12 +147,12 @@ if (!lives) {
   ctx.fillStyle = "#0095DD";
   ctx.fillText('Game over', canvas.width- 270, 190)
 	clearInterval(interval); 
-	document.querySelector('#canvasbtn')?.textContent == 'Restart?'
+	canvasbtn?.textContent === 'Restart?'
   } else {
     x = canvas.width / 2;
     y = canvas.height - 30;
     dx = -3;
-    dy = 2;
+    dy = 4;
     paddleX = (canvas.width - paddleWidth) / 2;
         }
       }
@@ -187,10 +187,14 @@ function startGame() {
   };
   draw();
 }
+const canvasbtn = document.querySelector('#canvasbtn')
 
-document.querySelector("button").addEventListener("click", function () {
+canvasbtn.addEventListener("click", function () {
   startGame();
-  this.disabled = true;
+	this.disabled = true;
+	if (!lives) {
+    this.disabled = false;
+	}
 })
 
 // document.addEventListener("mousemove", mouseMoveHandler, false);

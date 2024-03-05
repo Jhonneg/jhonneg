@@ -28,7 +28,7 @@ const ballRadius = 10;
 let x = canvas.width / 2;
 let y = canvas.height - 30;
 let dx = -3;
-let dy = 2;
+let dy = 4;
 const paddleHeight = 10;
 const paddleWidth = 75;
 let paddleX = (canvas.width - paddleWidth) / 2;
@@ -115,7 +115,6 @@ function drawLives() {
     ctx.fillText(`Lives: ${lives}`, canvas.width - 65, 20);
 }
 function draw() {
-    var _a;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBricks();
     drawBall();
@@ -142,13 +141,13 @@ function draw() {
                 ctx.fillStyle = "#0095DD";
                 ctx.fillText('Game over', canvas.width - 270, 190);
                 clearInterval(interval);
-                ((_a = document.querySelector('#canvasbtn')) === null || _a === void 0 ? void 0 : _a.textContent) == 'Restart?';
+                (canvasbtn === null || canvasbtn === void 0 ? void 0 : canvasbtn.textContent) === 'Restart?';
             }
             else {
                 x = canvas.width / 2;
                 y = canvas.height - 30;
                 dx = -3;
-                dy = 2;
+                dy = 4;
                 paddleX = (canvas.width - paddleWidth) / 2;
             }
         }
@@ -185,9 +184,13 @@ function startGame() {
     ;
     draw();
 }
-document.querySelector("button").addEventListener("click", function () {
+const canvasbtn = document.querySelector('#canvasbtn');
+canvasbtn.addEventListener("click", function () {
     startGame();
     this.disabled = true;
+    if (!lives) {
+        this.disabled = false;
+    }
 });
 // document.addEventListener("mousemove", mouseMoveHandler, false);
 // function mouseMoveHandler(e:any) {
