@@ -1,5 +1,5 @@
 const typer = document.querySelector('.typing');
-const text1 = 'A aspiring front-end dev';
+const text1 = 'A aspiring webdev';
 const text2 = 'A linux entusiast';
 const text3 = 'Open source contributor';
 function typingEffect(element, text1, i = 0) {
