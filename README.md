@@ -28,4 +28,4 @@ Since you can marry all these things together with front-end development, plus b
 
 [![My Skills](https://skillicons.dev/icons?i=blender,threejs)](https://skillicons.dev)
 
-[Portfolio](https://jonee2.is-a.dev/)
+# [Portfolio](https://jonee2.is-a.dev/)
