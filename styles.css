@@ -9,7 +9,7 @@ body{
     text-align: center;
     text-decoration: none;
     background-color:var(--sub-color);
-    max-width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 h1{
@@ -31,7 +31,7 @@ a{
     position: static;
 }
 .main-title{
-    font-size:  5rem;
+    font-size: 5rem;
     background-color: var(--main-color);
     margin: 0;
     color:var(--sub-color);
@@ -59,9 +59,9 @@ span{
 .card{
     border: var(--main-color);
     width: 500px;
-    margin-right:100px ;
+    margin-right:100px;
 }
-.left img{
+.card img{
     height: 200px;
 }
 .footer{
@@ -106,7 +106,28 @@ canvas{
     background-color: white;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:375px){
+    body{
+        width: 50%;
+    }
+    .gif
+    {
+    width: 50%;
+    }
+    .main {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 100px;
+    margin-left: 0px;
+    }
+    
+
+}
+@media screen and (max-width: 600px){
+    body{
+        width: 50%;
+    }
     .gif
     {
         width: 50%;
@@ -121,3 +142,4 @@ canvas{
     
 
 }
+
