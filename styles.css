@@ -116,27 +116,23 @@ canvas {
     font-size: 4rem;
   }
   .gif {
-    width: 50%;
+    width: 25%;
   }
   .main {
     display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(3, auto);
-    gap: 100px;
+    grid-template-columns: repeat(1, 100px);
+    grid-template-rows: repeat(3, 100px);
     margin-left: 0px;
-    padding-bottom: 200px;
-    margin-top: 5em;
   }
 }
 @media screen and (max-width: 600px) {
   .gif {
-    width: 50%;
+    width: 10%;
   }
   .main {
     display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(1, 100px);
     grid-template-rows: repeat(3, auto);
-    gap: 20px;
-    margin-left: 0px;
+    justify-items: start;
   }
 }
