@@ -9,7 +9,6 @@ body {
   text-align: center;
   text-decoration: none;
   background-color: var(--sub-color);
-  min-height: 100vh;
 }
 h1 {
   text-transform: uppercase;
@@ -25,10 +24,6 @@ a {
   margin: 0;
   padding: 0;
 }
-.aboutme img {
-  width: 200px;
-  position: static;
-}
 .main-title {
   font-size: 5rem;
   background-color: var(--main-color);
@@ -40,6 +35,12 @@ a {
 .sub-title {
   background-color: var(--main-color);
   color: var(--sub-color);
+  padding: 5px 50px;
+  margin: 10px 0px;
+}
+.sub-title-black {
+  background-color: var(--sub-color);
+  color: var(--main-color);
 }
 span {
   background-color: var(--main-color);
@@ -92,22 +93,29 @@ footer img {
   background-color: var(--sub-color);
   color: var(--main-color);
 }
+.para-black {
+  font-size: 1.25rem;
+  font-weight: bold;
+  /* width: 300px; */
+  background-color: var(--main-color);
+  color: var(--sub-color);
+}
 #canvasbtn {
   width: 150px;
   height: 30px;
   border-radius: 10px;
   border-style: none;
-  background: var(--main-color);
-  border: var(--sub-color) solid 1px;
-  color: var(--sub-color);
+  background: var(--sub-color);
+  border: var(--main-color) solid 1px;
+  color: var(--main-color);
   margin-bottom: 10px;
   font-weight: 900;
 }
 #canvasbtn:hover {
   cursor: pointer;
-  background-color: var(--sub-color);
-  border: var(--main-color) solid 1px;
-  color: var(--main-color);
+  background-color: var(--main-color);
+  border: var(--sub-color) solid 1px;
+  color: var(--sub-color);
 }
 canvas {
   background-color: white;
