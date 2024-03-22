@@ -39,7 +39,6 @@ a {
 }
 .sub-title {
   background-color: var(--main-color);
-  margin: 0;
   color: var(--sub-color);
 }
 span {
@@ -56,11 +55,18 @@ span {
 }
 .card {
   border: var(--main-color);
-  width: 500px;
-  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  margin: 0px 0px 20px 0px;
+  padding: 10px;
 }
 .card img {
-  height: 200px;
+  height: 400px;
+  width: 500px;
 }
 .footer {
   text-align: center;
@@ -82,6 +88,9 @@ footer img {
 .para {
   font-size: 1.25rem;
   font-weight: bold;
+  width: 400px;
+  background-color: var(--sub-color);
+  color: var(--main-color);
 }
 #canvasbtn {
   width: 150px;
