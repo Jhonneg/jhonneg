@@ -48,11 +48,11 @@ span {
 }
 .main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 100px;
-  margin-left: 100px;
-  margin-top: 5em;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 50px;
+  /* margin-left: 100px; */
+  margin-top: 80px;
 }
 .card {
   border: var(--main-color);
@@ -63,19 +63,18 @@ span {
   background-color: var(--main-color);
   border-radius: 10px;
   margin: 0px 0px 20px 0px;
-  padding: 10px;
 }
 .card img {
-  height: 400px;
-  width: 500px;
+  height: 300px;
+  width: 400px;
 }
-.footer {
+footer {
   text-align: center;
-  padding: 5px;
+  padding: 5px auto;
   font-weight: bold;
   background-color: var(--main-color);
 }
-.footer li {
+footer li {
   display: inline-block;
   text-decoration: none;
   list-style: none;
@@ -126,29 +125,36 @@ canvas {
     padding: 20px;
     margin: 0;
   }
-  .card img {
-    height: 150px;
-  }
+
   .main-title {
     font-size: 4rem;
   }
-  .gif {
-    width: 25%;
-  }
   .main {
     display: grid;
-    grid-template-columns: repeat(1, 100px);
-    grid-template-rows: repeat(3, 100px);
-    margin-left: 0px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+  #myCanvas {
+    height: 200px;
   }
 }
 @media screen and (max-width: 600px) {
-  .gif {
-    width: 10%;
+  .card {
+    padding: 0px;
+    border-radius: 0;
+    padding-bottom: 20px;
+    border-radius: 0px;
+  }
+  .card img {
+    height: 150px;
+    width: 270px;
+  }
+  .para {
+    width: 300px;
   }
   .main {
     display: grid;
-    grid-template-columns: repeat(1, 100px);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(3, auto);
     justify-items: start;
   }
