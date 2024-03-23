@@ -61,7 +61,7 @@ span {
   align-items: center;
   justify-content: center;
   background-color: var(--main-color);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin: 0px 0px 20px 0px;
 }
 .card img {
@@ -70,17 +70,15 @@ span {
 }
 footer {
   text-align: center;
-  padding: 5px auto;
   font-weight: bold;
   background-color: var(--main-color);
+  padding: 5px;
+  position: sticky;
 }
 footer li {
   display: inline-block;
   text-decoration: none;
   list-style: none;
-}
-footer p {
-  color: var(--sub-color);
 }
 footer img {
   height: 30px;
@@ -119,43 +117,15 @@ footer img {
 canvas {
   background-color: white;
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   .header {
     padding: 20px;
     margin: 0;
   }
-
   .main-title {
     font-size: 4rem;
   }
-  .main {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(3, auto);
-  }
   #myCanvas {
-    height: 200px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .card {
-    padding: 0px;
-    border-radius: 0;
-    padding-bottom: 20px;
-    border-radius: 0px;
-  }
-  .card img {
-    height: 150px;
-    width: 270px;
-  }
-  .para {
-    width: 300px;
-  }
-  .main {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(3, auto);
-    justify-items: start;
+    min-height: 200px;
   }
 }
