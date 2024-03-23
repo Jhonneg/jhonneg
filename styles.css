@@ -48,8 +48,8 @@ span {
 }
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
   /* margin-left: 100px; */
   margin-top: 80px;
@@ -126,6 +126,6 @@ canvas {
     font-size: 4rem;
   }
   #myCanvas {
-    height: clamp(100px, 200px, 300px);
+    height: clamp(50px, 200px, 300px);
   }
 }
