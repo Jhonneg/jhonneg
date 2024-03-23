@@ -48,7 +48,7 @@ span {
 }
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
   /* margin-left: 100px; */
@@ -121,6 +121,10 @@ canvas {
   .header {
     padding: 120px 0px;
     margin: 0;
+  }
+  .main {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   }
   .main-title {
     font-size: 4rem;
