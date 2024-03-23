@@ -48,8 +48,8 @@ span {
 }
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
   gap: 50px;
   /* margin-left: 100px; */
   margin-top: 80px;
@@ -65,8 +65,8 @@ span {
   margin: 0px 0px 20px 0px;
 }
 .card img {
-  height: 300px;
-  width: 400px;
+  height: clamp(100px, 300px, 400px);
+  width: clamp(100px, 400px, 400px);
 }
 footer {
   text-align: center;
@@ -86,14 +86,13 @@ footer img {
 .para {
   font-size: 1.25rem;
   font-weight: bold;
-  width: 400px;
+  width: clamp(100px, 300px, 400px);
   background-color: var(--sub-color);
   color: var(--main-color);
 }
 .para-black {
   font-size: 1.25rem;
   font-weight: bold;
-  /* width: 300px; */
   background-color: var(--main-color);
   color: var(--sub-color);
 }
@@ -115,17 +114,18 @@ footer img {
   color: var(--sub-color);
 }
 canvas {
+  height: clamp(200px, 300px, 400px);
   background-color: white;
 }
 @media screen and (max-width: 600px) {
   .header {
-    padding: 20px;
+    padding: 120px 0px;
     margin: 0;
   }
   .main-title {
     font-size: 4rem;
   }
   #myCanvas {
-    min-height: 200px;
+    height: clamp(100px, 200px, 300px);
   }
 }
