@@ -33,14 +33,15 @@ a {
   font-weight: 900;
 }
 .sub-title {
-  background-color: var(--main-color);
-  color: var(--sub-color);
-  padding: 5px 50px;
-  margin: 10px 0px;
-}
-.sub-title-black {
   background-color: var(--sub-color);
   color: var(--main-color);
+  padding: 5px 50px;
+  margin: 10px 0px;
+  font-weight: 600;
+}
+.sub-title-black {
+  background-color: var(--main-color);
+  color: var(--sub-color);
 }
 span {
   background-color: var(--main-color);
@@ -60,7 +61,7 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--main-color);
+  background-color: var(--sub-color);
   /* border-radius: 10px; */
   margin: 0px 0px 20px 0px;
 }
@@ -86,9 +87,9 @@ footer img {
 .para {
   font-size: 1.25rem;
   font-weight: bold;
-  width: clamp(100px, 300px, 400px);
-  background-color: var(--sub-color);
-  color: var(--main-color);
+  width: clamp(100px, 400px, 400px);
+  background-color: var(--main-color);
+  color: var(--sub-color);
 }
 .para-black {
   font-size: 1.25rem;
@@ -128,6 +129,9 @@ canvas {
   }
   .main-title {
     font-size: 4rem;
+  }
+  .para{
+  width: clamp(100px, 280px, 400px);
   }
   #myCanvas {
     height: clamp(50px, 200px, 300px);
