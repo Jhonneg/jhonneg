@@ -130,8 +130,8 @@ canvas {
   .main-title {
     font-size: 4rem;
   }
-  .para{
-  width: clamp(100px, 280px, 400px);
+  .para {
+    width: clamp(100px, 280px, 400px);
   }
   #myCanvas {
     height: clamp(50px, 200px, 300px);
