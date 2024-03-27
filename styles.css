@@ -18,11 +18,12 @@ a {
 }
 .header {
   padding: 120px 0px;
+  margin: 0 200px;
 }
 .header-black-tilted {
   padding: 70px 0px 30px;
   position: relative;
-  margin: 200px 0px 200px;
+  margin: 200px 200px 200px;
 }
 .header-black-tilted::after {
   content: "";
@@ -52,7 +53,7 @@ a {
   background-color: var(--sub-color);
   color: var(--main-color);
   padding: 5px;
-  margin: 10px 200px;
+  margin: 10px 0px;
   font-weight: 600;
 }
 .sub-title-black {
@@ -146,8 +147,15 @@ canvas {
   .main-title {
     font-size: 4rem;
   }
+  .header {
+    width: 100%;
+  }
+  .header-black-tilted {
+    width: 100%;
+    margin: 200px 0px 200px;
+  }
   .sub-title {
-    margin: 10px 100px;
+    margin: 10px 0px;
   }
   .para {
     width: clamp(100px, 280px, 400px);
