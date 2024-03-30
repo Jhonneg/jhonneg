@@ -18,11 +18,11 @@ Since you can marry all these things together with front-end development, plus b
 
 # Current tech stack
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux,bootstrap,js)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux,tailwind,js)](https://skillicons.dev)
 
 # Currently learning
 
-[![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgres,react,tailwind,ts,nextjs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgres,react,ts,nextjs)](https://skillicons.dev)
 
 # Will learn in the future
 
