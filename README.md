@@ -8,13 +8,11 @@
 
 Hello, my name is Jhonne and front end development is my main focus.
 
-Being able to create true works of visual art with lines of code is something that fascinated me about web development, currently i'm learning the basics(HTML, CSS, Javascript and React) but in the future i plan to focus on Javascript graphics libraries, like Three.js.
+Being able to create true works of visual art with lines of code is something that fascinated me about web development.
 
-I have a genuine interest visual design in web browsers, from user-friendly UIs to interactive animations, from mobile-first websites to 3D background animations.
+Plus the possibility of putting in practice problem solving skills, searching for pratical solutions and having a creative outlet allows me to grow as a developer.
 
-Plus the possibility of putting in practice problem solving skills, searching for pratical solutions and having a creative outlet allows me to grow as a person.
-
-Since you can marry all these things together with front-end development, plus build a career on top of that, i've found what i'm passionate about.
+Since you can marry all these things together with web development, plus build a career on top of that, i've found what i'm passionate about.
 
 # Current tech stack
 
