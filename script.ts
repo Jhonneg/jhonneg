@@ -1,29 +1,32 @@
-const typer = document.querySelector('.typing');
-const text1 = 'A aspiring webdev';
-const text2 = 'A linux entusiast';
-const text3 = 'Open source contributor';
-function typingEffect(element, text1, i = 0) {
-	if (i === 0) {
-		element.textContent = '';
-	}
-	element.textContent += text1[i];
-	if (i === text1.length - 1) {
-		return;
-	}
-	setTimeout(() => typingEffect(typer, text1, i + 1), 30);
-	// if (element.textContent = "A aspiring front-end dev") {
-	//     setTimeout(() => eraserEffect, 30)
-	// }
-	// setTimeout(() => typingEffect(typer, text2, i + 1), 30)
-}
-typingEffect(typer, text1, 0);
-function eraserEffect() {
-	textContent.slice(0, -1);
+const typer = document.querySelector(".typing");
+const text = [
+  "A aspiring webdev",
+  "A linux entusiast",
+  "A aspiring 3D artist",
+  "Front-end enjoyer",
+];
+let n = 0;
+
+function generateNumber() {
+  n = Math.floor(Math.random() * text.length);
+  return n;
 }
 
+function typingEffect(element, text, i = 0) {
+  if (i === 0) {
+    element.textContent = "";
+  }
+  element.textContent += text[n][i];
+  if (i === text[n].length - 1) {
+    setTimeout(() => generateNumber(), 1000);
+    setTimeout(() => typingEffect(typer, text), 3000);
+    return;
+  }
+  setTimeout(() => typingEffect(typer, text, i + 1), 50);
+}
+typingEffect(typer, text);
 
 //breakout ==>
-
 
 const canvas = document.querySelector("#myCanvas");
 const ctx = canvas.getContext("2d");
@@ -44,14 +47,14 @@ const brickHeight = 20;
 const brickPadding = 10;
 const brickOffsetTop = 30;
 const brickOffsetLeft = 30;
-let score = 0
+let score = 0;
 let lives = 3;
 
-let bricks:any= [];
+let bricks: any = [];
 for (let c = 0; c < brickColumnCount; c++) {
-    bricks[c] = [];
-    for (let r = 0; r < brickRowCount; r++) {
-        bricks[c][r] = { x: 0, y: 0, status:1};
+  bricks[c] = [];
+  for (let r = 0; r < brickRowCount; r++) {
+    bricks[c][r] = { x: 0, y: 0, status: 1 };
   }
 }
 
@@ -67,13 +70,13 @@ function collisionDetection() {
           y < b.y + brickHeight
         ) {
           dy = -dy;
-          b.status = 0
-          score++
+          b.status = 0;
+          score++;
           if (score === brickRowCount * brickColumnCount) {
-          ctx.font = "16px Arial";
-          ctx.fillStyle = "#0095DD";
-          ctx.fillText('You won', canvas.width - 270, 190);
-            clearInterval(interval); 
+            ctx.font = "16px Arial";
+            ctx.fillStyle = "#0095DD";
+            ctx.fillText("You won", canvas.width - 270, 190);
+            clearInterval(interval);
           }
         }
       }
@@ -81,7 +84,7 @@ function collisionDetection() {
   }
 }
 function drawBall() {
-    ctx.beginPath();
+  ctx.beginPath();
   ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
   ctx.fillStyle = "#0095DD";
   ctx.fill();
@@ -96,18 +99,18 @@ function drawPaddle() {
 }
 function drawBricks() {
   for (let c = 0; c < brickColumnCount; c++) {
-      for (let r = 0; r < brickRowCount; r++) {
-          if (bricks[c][r].status === 1) {
-              const brickX = c * (brickWidth + brickPadding) + brickOffsetLeft;
-              const brickY = r * (brickHeight + brickPadding) + brickOffsetTop;
-              bricks[c][r].x = brickX;
-              bricks[c][r].y = brickY;
-              ctx.beginPath();
-              ctx.rect(brickX, brickY, brickWidth, brickHeight);
-              ctx.fillStyle = "#0095DD";
-              ctx.fill();
-              ctx.closePath();
-          }
+    for (let r = 0; r < brickRowCount; r++) {
+      if (bricks[c][r].status === 1) {
+        const brickX = c * (brickWidth + brickPadding) + brickOffsetLeft;
+        const brickY = r * (brickHeight + brickPadding) + brickOffsetTop;
+        bricks[c][r].x = brickX;
+        bricks[c][r].y = brickY;
+        ctx.beginPath();
+        ctx.rect(brickX, brickY, brickWidth, brickHeight);
+        ctx.fillStyle = "#0095DD";
+        ctx.fill();
+        ctx.closePath();
+      }
     }
   }
 }
@@ -129,48 +132,48 @@ function draw() {
   drawPaddle();
   drawScore();
   drawLives();
-    collisionDetection();
-    if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
-        dx = -dx;
-    }
-      if (y + dy < ballRadius) {
-          dy = -dy;
-      } else if (y + dy > canvas.height - ballRadius) {
-      if (x > paddleX && x < paddleX + paddleWidth) {
-          if ((y = y - paddleHeight)) {
-              dy = -dy;
-          }
+  collisionDetection();
+  if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+    dx = -dx;
+  }
+  if (y + dy < ballRadius) {
+    dy = -dy;
+  } else if (y + dy > canvas.height - ballRadius) {
+    if (x > paddleX && x < paddleX + paddleWidth) {
+      if ((y = y - paddleHeight)) {
+        dy = -dy;
+      }
     } else {
-     lives--;
-if (!lives) {
-  ctx.font = "16px Arial";
-  ctx.fillStyle = "#0095DD";
-  ctx.fillText('Game over', canvas.width- 270, 190)
-	clearInterval(interval); 
-	canvasbtn?.textContent === 'Restart?'
-  } else {
-    x = canvas.width / 2;
-    y = canvas.height - 30;
-    dx = -3;
-    dy = 4;
-    paddleX = (canvas.width - paddleWidth) / 2;
-        }
+      lives--;
+      if (!lives) {
+        ctx.font = "16px Arial";
+        ctx.fillStyle = "#0095DD";
+        ctx.fillText("Game over", canvas.width - 270, 190);
+        clearInterval(interval);
+        canvasbtn?.textContent === "Restart?";
+      } else {
+        x = canvas.width / 2;
+        y = canvas.height - 30;
+        dx = -3;
+        dy = 4;
+        paddleX = (canvas.width - paddleWidth) / 2;
       }
     }
-    
-    if (rightPressed && paddleX < canvas.width - paddleWidth) {
-      paddleX += 7;
-    } else if (leftPressed && paddleX > 0) {
-      paddleX -= 7;
-    }
-    x += dx;
-    y += dy;
-    requestAnimationFrame(draw) 
+  }
+
+  if (rightPressed && paddleX < canvas.width - paddleWidth) {
+    paddleX += 7;
+  } else if (leftPressed && paddleX > 0) {
+    paddleX -= 7;
+  }
+  x += dx;
+  y += dy;
+  requestAnimationFrame(draw);
 }
 function startGame() {
   document.addEventListener("keydown", keyDownHandler, false);
   document.addEventListener("keyup", keyUpHandler, false);
-  function keyDownHandler(e:any) {
+  function keyDownHandler(e: any) {
     if (e.key === "Right" || e.key === "ArrowRight") {
       rightPressed = true;
     } else if (e.key === "Left" || e.key === "ArrowLeft") {
@@ -178,30 +181,21 @@ function startGame() {
     }
   }
 
-  function keyUpHandler(e:any) {
+  function keyUpHandler(e: any) {
     if (e.key === "Right" || e.key === "ArrowRight") {
       rightPressed = false;
     } else if (e.key === "Left" || e.key === "ArrowLeft") {
       leftPressed = false;
     }
-  };
+  }
   draw();
 }
-const canvasbtn = document.querySelector('#canvasbtn')
+const canvasbtn = document.querySelector("#canvasbtn");
 
 canvasbtn.addEventListener("click", function () {
   startGame();
-	this.disabled = true;
-	if (!lives) {
+  this.disabled = true;
+  if (!lives) {
     this.disabled = false;
-	}
-})
-
-// document.addEventListener("mousemove", mouseMoveHandler, false);
-
-// function mouseMoveHandler(e:any) {
-//   const relativeX = e.clientX - canvas.offsetLeft;
-//   if (relativeX > 0 && relativeX < canvas.width) {
-//     paddleX = relativeX - paddleWidth / 2;
-//   }
-// }
+  }
+});

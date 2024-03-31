@@ -1,26 +1,29 @@
 "use strict";
-const typer = document.querySelector('.typing');
-const text1 = 'A aspiring front-end dev';
-const text2 = 'A linux entusiast';
-const text3 = 'Open source contributor';
-function typingEffect(element, text1, i = 0) {
+const typer = document.querySelector(".typing");
+const text = [
+    "A aspiring webdev",
+    "A linux entusiast",
+    "A aspiring 3D artist",
+    "Front-end enjoyer",
+];
+let n = 0;
+function generateNumber() {
+    n = Math.floor(Math.random() * text.length);
+    return n;
+}
+function typingEffect(element, text, i = 0) {
     if (i === 0) {
-        element.textContent = '';
+        element.textContent = "";
     }
-    element.textContent += text1[i];
-    if (i === text1.length - 1) {
+    element.textContent += text[n][i];
+    if (i === text[n].length - 1) {
+        setTimeout(() => generateNumber(), 1000);
+        setTimeout(() => typingEffect(typer, text), 3000);
         return;
     }
-    setTimeout(() => typingEffect(typer, text1, i + 1), 30);
-    // if (element.textContent = "A aspiring front-end dev") {
-    //     setTimeout(() => eraserEffect, 30)
-    // }
-    // setTimeout(() => typingEffect(typer, text2, i + 1), 30)
+    setTimeout(() => typingEffect(typer, text, i + 1), 50);
 }
-typingEffect(typer, text1, 0);
-function eraserEffect() {
-    textContent.slice(0, -1);
-}
+typingEffect(typer, text);
 //breakout ==>
 const canvas = document.querySelector("#myCanvas");
 const ctx = canvas.getContext("2d");
@@ -65,7 +68,7 @@ function collisionDetection() {
                     if (score === brickRowCount * brickColumnCount) {
                         ctx.font = "16px Arial";
                         ctx.fillStyle = "#0095DD";
-                        ctx.fillText('You won', canvas.width - 270, 190);
+                        ctx.fillText("You won", canvas.width - 270, 190);
                         clearInterval(interval);
                     }
                 }
@@ -139,9 +142,9 @@ function draw() {
             if (!lives) {
                 ctx.font = "16px Arial";
                 ctx.fillStyle = "#0095DD";
-                ctx.fillText('Game over', canvas.width - 270, 190);
+                ctx.fillText("Game over", canvas.width - 270, 190);
                 clearInterval(interval);
-                (canvasbtn === null || canvasbtn === void 0 ? void 0 : canvasbtn.textContent) === 'Restart?';
+                (canvasbtn === null || canvasbtn === void 0 ? void 0 : canvasbtn.textContent) === "Restart?";
             }
             else {
                 x = canvas.width / 2;
@@ -181,10 +184,9 @@ function startGame() {
             leftPressed = false;
         }
     }
-    ;
     draw();
 }
-const canvasbtn = document.querySelector('#canvasbtn');
+const canvasbtn = document.querySelector("#canvasbtn");
 canvasbtn.addEventListener("click", function () {
     startGame();
     this.disabled = true;
@@ -192,10 +194,3 @@ canvasbtn.addEventListener("click", function () {
         this.disabled = false;
     }
 });
-// document.addEventListener("mousemove", mouseMoveHandler, false);
-// function mouseMoveHandler(e:any) {
-//   const relativeX = e.clientX - canvas.offsetLeft;
-//   if (relativeX > 0 && relativeX < canvas.width) {
-//     paddleX = relativeX - paddleWidth / 2;
-//   }
-// }
