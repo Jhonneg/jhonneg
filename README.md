@@ -20,7 +20,7 @@ Since you can marry all these things together with web development, plus build a
 
 # Currently learning
 
-[![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgres,react,ts,nextjs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgres,react,ts,nextjs,docker,jest,cypress)](https://skillicons.dev)
 
 # Will learn in the future
 
