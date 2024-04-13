@@ -19,4 +19,4 @@ Since you can marry all these things together with web development, plus build a
 [![Current tech stack](https://skillicons.dev/icons?i=html,css,bash,git,vscode,linux,tailwind,js)](https://skillicons.dev)
 
 
-# [Portfolio](https://jonee2.is-a.dev/)
+# [Portfolio](https://jhonneg.is-a.dev/)
