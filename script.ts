@@ -12,7 +12,7 @@ function generateNumber() {
   return n;
 }
 
-function typingEffect(element, text: string[], i = 0) {
+function typingEffect(element:any, text: string[], i = 0) {
   if (i === 0) {
     element.textContent = "";
   }
