@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-:root {
-  --main-color: #3c486b;
-  --sub-color: #f9f5eb;
-}
+
+$main-color: #3c486b;
+$sub-color: #f9f5eb;
+
 body {
   margin: 0;
   font-family: "Roboto Mono", monospace;
   text-align: center;
   text-decoration: none;
-  background-color: var(--sub-color);
+  background-color: $sub-color;
 }
 h1 {
   text-transform: uppercase;
@@ -24,117 +24,93 @@ a {
   padding: 70px 0px 30px;
   position: relative;
   margin: 200px 200px 200px;
+  b {
+    display: block;
+    margin-top: 0.5rem;
+    color: $sub-color;
+  }
 }
 .header-black-tilted::after {
   content: "";
-  background: var(--main-color);
+  background: $main-color;
   position: absolute;
   inset: 0;
   transform: skewY(5deg);
   z-index: -1;
 }
-.header-black-tilted p {
-  color: var(--sub-color);
-}
-.header img {
-  width: 30px;
-  margin: 0;
-  padding: 0;
-}
+
 .main-title {
   font-size: 5rem;
-  background-color: var(--main-color);
+  background-color: $main-color;
   margin: 0;
-  color: var(--sub-color);
+  color: $sub-color;
   text-transform: uppercase;
   font-weight: 900;
 }
 .sub-title {
-  background-color: var(--sub-color);
-  color: var(--main-color);
+  background-color: $sub-color;
+  color: $main-color;
   padding: 5px;
   margin: 10px 0px;
   font-weight: 600;
 }
 .sub-title-black {
-  background-color: var(--main-color);
-  color: var(--sub-color);
+  background-color: $main-color;
+  color: $sub-color;
 }
 span {
-  background-color: var(--main-color);
-  color: var(--sub-color);
+  background-color: $main-color;
+  color: $sub-color;
 }
 .main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
-  /* margin-left: 100px; */
   margin-top: 80px;
 }
 .card {
-  border: var(--main-color);
+  border: $main-color;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--sub-color);
-  /* border-radius: 10px; */
+  background-color: $sub-color;
   margin: 0px 0px 20px 0px;
-}
-.card img {
-  height: clamp(100px, 300px, 400px);
-  width: clamp(100px, 400px, 400px);
+  img {
+    height: clamp(100px, 300px, 400px);
+    width: clamp(100px, 400px, 400px);
+  }
 }
 footer {
   text-align: center;
   font-weight: bold;
-  background-color: var(--main-color);
+  background-color: $main-color;
   padding: 5px;
   position: sticky;
-}
-footer li {
-  display: inline-block;
-  text-decoration: none;
-  list-style: none;
-}
-footer img {
-  height: 30px;
+  li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  img {
+    height: 30px;
+  }
 }
 .para {
   font-size: 1.25rem;
   font-weight: bold;
   width: clamp(100px, 400px, 400px);
-  background-color: var(--main-color);
-  color: var(--sub-color);
+  background-color: $main-color;
+  color: $sub-color;
 }
 .para-black {
   font-size: 1.25rem;
   font-weight: bold;
-  background-color: var(--main-color);
-  color: var(--sub-color);
+  background-color: $main-color;
+  color: $sub-color;
 }
-#canvasbtn {
-  width: 150px;
-  height: 30px;
-  border-radius: 10px;
-  border-style: none;
-  background: var(--sub-color);
-  border: var(--main-color) solid 1px;
-  color: var(--main-color);
-  margin-bottom: 10px;
-  font-weight: 900;
-}
-#canvasbtn:hover {
-  cursor: pointer;
-  background-color: var(--main-color);
-  border: var(--sub-color) solid 1px;
-  color: var(--sub-color);
-}
-canvas {
-  height: clamp(200px, 300px, 400px);
-  background-color: white;
-}
+
 @media screen and (max-width: 600px) {
   .header {
     padding: 120px 0px;
@@ -159,8 +135,5 @@ canvas {
   }
   .para {
     width: clamp(100px, 280px, 400px);
-  }
-  #myCanvas {
-    height: clamp(50px, 200px, 300px);
   }
 }
