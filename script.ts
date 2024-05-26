@@ -1,4 +1,3 @@
-
 const typer = document.querySelector(".typing");
 const text = [
   "A aspiring webdev",

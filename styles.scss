@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 $main-color: #3c486b;
 $sub-color: #f9f5eb;
 
@@ -23,6 +24,11 @@ a {
   padding: 70px 0px 30px;
   position: relative;
   margin: 200px 200px 200px;
+  b {
+    display: block;
+    margin-top: 0.5rem;
+    color: $sub-color;
+  }
 }
 .header-black-tilted::after {
   content: "";
@@ -32,16 +38,7 @@ a {
   transform: skewY(5deg);
   z-index: -1;
 }
-.header-black-tilted b {
-  display: block;
-  margin-top: 0.5rem;
-  color: $sub-color;
-}
-.header img {
-  width: 30px;
-  margin: 0;
-  padding: 0;
-}
+
 .main-title {
   font-size: 5rem;
   background-color: $main-color;
@@ -70,7 +67,6 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
-  /* margin-left: 100px; */
   margin-top: 80px;
 }
 .card {
@@ -80,12 +76,11 @@ span {
   align-items: center;
   justify-content: center;
   background-color: $sub-color;
-  /* border-radius: 10px; */
   margin: 0px 0px 20px 0px;
-}
-.card img {
-  height: clamp(100px, 300px, 400px);
-  width: clamp(100px, 400px, 400px);
+  img {
+    height: clamp(100px, 300px, 400px);
+    width: clamp(100px, 400px, 400px);
+  }
 }
 footer {
   text-align: center;
@@ -93,14 +88,14 @@ footer {
   background-color: $main-color;
   padding: 5px;
   position: sticky;
-}
-footer li {
-  display: inline-block;
-  text-decoration: none;
-  list-style: none;
-}
-footer img {
-  height: 30px;
+  li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  img {
+    height: 30px;
+  }
 }
 .para {
   font-size: 1.25rem;
@@ -115,27 +110,7 @@ footer img {
   background-color: $main-color;
   color: $sub-color;
 }
-#canvasbtn {
-  width: 150px;
-  height: 30px;
-  border-radius: 10px;
-  border-style: none;
-  background: $sub-color;
-  border: $main-color solid 1px;
-  color: $main-color;
-  margin-bottom: 10px;
-  font-weight: 900;
-}
-#canvasbtn:hover {
-  cursor: pointer;
-  background-color: $main-color;
-  border: $sub-color solid 1px;
-  color: $sub-color;
-}
-canvas {
-  height: clamp(200px, 300px, 400px);
-  background-color: white;
-}
+
 @media screen and (max-width: 600px) {
   .header {
     padding: 120px 0px;
@@ -160,8 +135,5 @@ canvas {
   }
   .para {
     width: clamp(100px, 280px, 400px);
-  }
-  #myCanvas {
-    height: clamp(50px, 200px, 300px);
   }
 }
