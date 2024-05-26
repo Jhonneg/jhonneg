@@ -83,18 +83,20 @@ span {
   }
 }
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   font-weight: bold;
   background-color: $main-color;
-  padding: 5px;
+  padding: 20px;
   position: sticky;
-  li {
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-  }
-  img {
+  a img {
     height: 30px;
+  }
+  div b,
+  img {
+    vertical-align: middle;
+    color: $sub-color;
   }
 }
 .para {
