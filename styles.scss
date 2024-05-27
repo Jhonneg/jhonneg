@@ -10,11 +10,22 @@ body {
   text-decoration: none;
   background-color: $sub-color;
 }
+.pmain {
+  color: $main-color;
+}
+.psec {
+  color: $sub-color;
+}
+
 h1 {
   text-transform: uppercase;
 }
 a {
   text-decoration: none;
+}
+b {
+  display: block;
+  margin-top: 0.5rem;
 }
 .header {
   padding: 120px 0px;
@@ -25,8 +36,6 @@ a {
   position: relative;
   margin: 200px 200px 200px;
   b {
-    display: block;
-    margin-top: 0.5rem;
     color: $sub-color;
   }
 }
@@ -91,10 +100,7 @@ footer {
   padding: 20px;
   position: sticky;
   a img {
-    animation-name: spin;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: spin infinite 5s linear;
   }
   @keyframes spin {
     from {
