@@ -5,12 +5,12 @@ const text = [
   "A aspiring 3D artist",
   "Front-end enjoyer",
 ];
+let n = 0;
+function generateNumber() {
+  n = Math.floor(Math.random() * text.length);
+  return n;
+}
 function typingEffect(element: any, text: string[], i = 0) {
-  let n = 0;
-  function generateNumber() {
-    n = Math.floor(Math.random() * text.length);
-    return n;
-  }
   if (i === 0) {
     element.textContent = "";
   }
