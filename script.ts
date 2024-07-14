@@ -1,7 +1,7 @@
 const typer = document.querySelector(".typing");
 const text = [
   "A aspiring webdev",
-  "A linux entusiast",
+  "A linux enthusiast",
   "A aspiring 3D artist",
   "Front-end enjoyer",
 ];
