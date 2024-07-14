@@ -99,7 +99,8 @@ footer {
   background-color: $main-color;
   padding: 20px;
   position: sticky;
-  a img {
+  a img,
+  svg {
     animation: spin infinite 15s linear;
   }
   @keyframes spin {
