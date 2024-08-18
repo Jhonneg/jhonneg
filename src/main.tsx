@@ -5,7 +5,7 @@ import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <main>
+    <main className="text-center p-8 my-0 mx-auto max-w-7xl">
       <App />
     </main>
   </StrictMode>

@@ -8,13 +8,15 @@ export default function Footer() {
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </aside>
         <nav className="flex justify-center items-center">
-          <img
-            className="animate-spin-slow"
-            width="30"
-            height="30"
-            src={ghSvg}
-            alt="github"
-          />
+          <a href="https://github.com/jhonneg">
+            <img
+              className="animate-spin-slow"
+              width="30"
+              height="30"
+              src={ghSvg}
+              alt="github"
+            />
+          </a>
         </nav>
       </footer>
     </>
