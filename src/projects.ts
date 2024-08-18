@@ -50,10 +50,9 @@ export const projectsData: ProjectCardProps[] = [
   {
     name: "Crown Clothing",
     techStack: ["React", "Firebase", "Styled Components"],
-    description:
-      "E-Commerce shop built with React, Typescript, Styled-components, Redux and Firebase",
+    description: "E-Commerce shop built with React",
     anchorLink: "https://crownfashion.netlify.app/",
     mediaUrl:
-      "https://jhonneg.is-a.dev/assets/Screenshot%20from%202024-07-13%2023-32-34-DeVWM5tv.png",
+      "https://github.com/user-attachments/assets/68f43d0e-ca2d-4a0b-b4d0-595d6f7d82d0",
   },
 ];
