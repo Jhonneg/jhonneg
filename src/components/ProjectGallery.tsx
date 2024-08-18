@@ -5,9 +5,9 @@ export default function ProjectGallery() {
   return (
     <>
       <div>
-        <p className="main-title">Projects</p>
+        <p className="text-4xl">Projects</p>
       </div>
-      <div className="grid-cols-3 gap-3">
+      <div className="gap-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-12">
         {projectsData.map((projects) => (
           <ProjectCard
             key={projects.name}

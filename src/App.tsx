@@ -7,7 +7,7 @@ import Typer from "./components/Typer";
 function App() {
   return (
     <>
-      <Typer delay={50} infinite />
+      <Typer />
       <About />
       <ProjectGallery />
       <Footer />

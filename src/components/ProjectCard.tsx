@@ -7,25 +7,22 @@ export default function ProjectCard({
   mediaUrl,
   techStack,
 }: ProjectCardProps) {
-  const isImage = mediaUrl.split().pop() === "jpg";
+    
   return (
-    <div className="card bg-base-100 w-96 lg:w-72 shadow-xl">
+    <div className="card bg-base-300 sm:w-5/6 md:w-96 lg:w-80 shadow-xl text-center ">
       <a href={anchorLink}>
-        {isImage ? (
-          <img src={mediaUrl} alt={name} />
-        ) : (
-          <video
-            loop
-            typeof="video/mp4"
-            autoPlay
-            muted
-            width="500"
-            height="500"
-            src={mediaUrl}
-          ></video>
-        )}
+        <img src={mediaUrl} alt={name} />
+        <video
+          loop
+          typeof="video/mp4"
+          autoPlay
+          muted
+          width="500"
+          height="500"
+          src={mediaUrl}
+        ></video>
       </a>
-      <div className="card-body text-center">
+      <div className="card-body flex items-center flex-grow">
         <h2 className="card-title">{name}</h2>
         <p>{description}</p>
         <div className="card-actions justify-center">

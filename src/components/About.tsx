@@ -1,22 +1,22 @@
 export default function About() {
   return (
-    <>
-      <section className="header">
-        <h1 className="sub-title-black">my skills</h1>
-        <b className="pmain">UI/UX-Designing</b>
-        <b className="pmain">Linux/Shell bash</b>
-        <b className="pmain">Git/Github</b>
+    <div>
+      <section className="flex flex-col my-24">
+        <div>
+          <div className="from-neutral to-current">
+            <h1 className="text-3xl my-4">Tech Stack</h1>
+          </div>
+        </div>
+        <code>Linux/Shell bash</code>
+        <code>Git/Github</code>
+        <code>HTML/CSS</code>
+        <code>Tailwind</code>
+        <code>Javascript</code>
+        <code>React</code>
+        <code>Node/Express</code>
+        <code>PostgreSQL</code>
+        <code>Visual Studio Code</code>
       </section>
-      <section className="header-black-tilted">
-        <h1 className="sub-title">Tech Stack</h1>
-        <b>HTML/CSS</b>
-        <b>Tailwind</b>
-        <b>Javascript</b>
-        <b>React</b>
-        <b>Node/Express</b>
-        <b>PostgreSQL</b>
-        <b>Visual Studio Code</b>
-      </section>
-    </>
+    </div>
   );
 }
