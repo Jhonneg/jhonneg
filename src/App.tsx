@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import ProjectGallery from "./components/ProjectGallery";
 import Typer from "./components/Typer";
 
-function App() {
+export default function App() {
   return (
     <>
       <Typer />
@@ -14,5 +14,3 @@ function App() {
     </>
   );
 }
-
-export default App;
