@@ -3,11 +3,13 @@ export type ProjectCardProps = {
   description: string;
   anchorLink: string;
   mediaUrl: string;
+  techStack: string[];
 };
 
 export const projectsData: ProjectCardProps[] = [
   {
     name: "Quiz app",
+    techStack: ["Vue"],
     description: "Quiz App built with Vue.js",
     anchorLink: "https://jhonneg.github.io/vueQuiz/",
     mediaUrl:
@@ -15,6 +17,7 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name: "Multiplayer Pong",
+    techStack: ["Node", "Socket.io"],
     description: "Multiplayer Pong game build with Node/Express and Socket.io",
     anchorLink: "https://pongjs-production.up.railway.app/",
     mediaUrl:
@@ -22,13 +25,15 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name: "Rock Paper Scissor Game",
+    techStack: ["Javascript"],
     description: "Javascript Rock Paper Scissor Odin Project.",
     anchorLink: "https://jhonneg.github.io/rock-paper-scissor/",
     mediaUrl:
-      "assets/Screencastfrom02-01-2024090133AM-ezgif.com-video-to-gif-converter.gif",
+      "https://jhonneg.is-a.dev/assets/Screencastfrom02-01-2024090133AM-ezgif.com-video-to-gif-converter-CEpZmeY0.gif",
   },
   {
     name: "Discord weather bot",
+    techStack: ["Node", "Express"],
     description: "Discord weather bot built with DiscordJS",
     anchorLink: "https://github.com/Jhonneg/DiscordJS",
     mediaUrl:
@@ -36,6 +41,7 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name: "Face Recognition App",
+    techStack: ["React", "Tailwind"],
     description: "Build with React and TailwindCSS",
     anchorLink: "https://smartbrian.netlify.app/",
     mediaUrl:
@@ -43,9 +49,11 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name: "Crown Clothing",
+    techStack: ["React", "Firebase", "Styled Components"],
     description:
       "E-Commerce shop built with React, Typescript, Styled-components, Redux and Firebase",
     anchorLink: "https://crownfashion.netlify.app/",
-    mediaUrl: "assets/Screenshot from 2024-07-13 23-32-34.png",
+    mediaUrl:
+      "https://jhonneg.is-a.dev/assets/Screenshot%20from%202024-07-13%2023-32-34-DeVWM5tv.png",
   },
 ];
