@@ -1,122 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.scss" />
+    <meta charset="UTF-8" />
     <link
       type="image/png"
       sizes="16x16"
       rel="icon"
       href="/assets/icons8-source-code-16.png"
     />
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <script defer src="script.ts"></script>
   </head>
   <body>
-    <main>
-      <section class="header">
-        <h1>I'm Jhonne</h1>
-        <p class="typing sub-title para-black"></p>
-      </section>
-      <section class="header">
-        <p class="para-black sub-title">About Me</p>
-        <p>
-          Hello, i'm a aspiring webdev and my focus is designing user-friendly
-          web-applications
-        </p>
-      </section>
-      <section class="header">
-        <h1 class="sub-title-black">my skills</h1>
-        <p>UI/UX-Designing</p>
-        <p>Linux/Shell bash</p>
-        <p>Git/Github</p>
-      </section>
-      <section class="header-black-tilted">
-        <h1 class="sub-title">Tech Stack</h1>
-        <b>HTML/CSS</b>
-        <b>Tailwind</b>
-        <b>Javascript</b>
-        <b>React</b>
-        <b>Node/Express</b>
-        <b>PostgreSQL</b>
-        <b>Visual Studio Code</b>
-      </section>
-      <div class="header">
-        <p class="main-title">Projetos</p>
-      </div>
-      <section class="main">
-        <div class="card">
-          <p class="sub-title para">Lawfirm Landing page</p>
-          <p class="sub-title">Lawfirm landing page website using bootstrap.</p>
-          <a href="https://jhonneg.github.io/better-call-saul/"
-            ><img
-              class="lawgif"
-              alt="lawfirm"
-              src="assets/Screencast from 01-24-2024 10_11_32 AM.gif"
-          /></a>
-        </div>
-        <div class="card">
-          <p class="sub-title para">Multiplayer Pong</p>
-          <p class="sub-title">
-            Multiplayer Pong game build with Node/Express and Socket.io
-          </p>
-          <a href="https://pongjs-production.up.railway.app/">
-            <img alt="pong demo" src="/assets/Kazam_screencast_00000 (1).gif" />
-          </a>
-        </div>
-        <div class="card">
-          <p class="sub-title para">Rock Paper Scissor Game.</p>
-          <p class="sub-title">
-            Rock Paper Scissor Game made in Pure Javascript.
-          </p>
-          <a href="https://jhonneg.github.io/rock-paper-scissor/"
-            ><img
-              alt="RPS"
-              src="assets/Screencastfrom02-01-2024090133AM-ezgif.com-video-to-gif-converter.gif"
-          /></a>
-        </div>
-        <div class="card">
-          <p class="sub-title para">Discord weather bot</p>
-          <p class="sub-title">Discord weather bot built with DiscordJS</p>
-          <a href="https://github.com/Jhonneg/DiscordJS"
-            ><img
-              alt="discordbot"
-              src="assets/Screencast from 05-13-2024 11_50_34 AM.gif"
-          /></a>
-        </div>
-        <div class="card">
-          <p class="sub-title para">Face Recognition App</p>
-          <p class="sub-title">Build with React, Node/Express and Postgres</p>
-          <a href="https://smartbrian.netlify.app/">
-            <img
-              alt="faceappexample"
-              src="https://github.com/Jhonneg/SmartbrainJSX/raw/main/assets/Screenshot%20from%202024-05-04%2008-08-01.png"
-            />
-          </a>
-        </div>
-        <div class="card">
-          <p class="sub-title para">Library in JS</p>
-          <p class="sub-title">
-            Book library made in JS, you can add books, remove it and mark it as
-            read
-          </p>
-          <a href="https://jhonneg.github.io/libraryJS/"
-            ><img
-              alt="loginform"
-              src="assets/Screenshot from 2024-03-22 19-42-15.png"
-          /></a>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <ul class="contactfooter">
-        <li>
-          <a href="https://github.com/jhonneg"
-            ><img class="icons" alt="Github" src="assets/image.png"
-          /></a>
-        </li>
-      </ul>
-    </footer>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
