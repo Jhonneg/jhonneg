@@ -1,4 +1,5 @@
-import { ProjectCardProps } from "../projects";
+import React from "react";
+import { ProjectCardProps } from "@/constants/projects";
 
 export default function ProjectCard({
   name,
@@ -9,13 +10,16 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <a href={anchorLink}>
-      <div>
-        <div
-          className="hero min-h-80"
-          style={{
-            backgroundImage: `url(${mediaUrl})`,
-          }}
-        >
+      <div className="">
+        <div className="hero min-h-80">
+          <video
+            width="570"
+            height="auto"
+            autoPlay
+            loop
+            muted
+            src={mediaUrl}
+          ></video>
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-neutral-content text-center">
             <div className="max-w-md">
