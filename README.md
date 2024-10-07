@@ -6,7 +6,7 @@
 
 # About me
 
-Hello, my name is Jhonne and front end development is my main focus.
+Hello, my name is Jhonne and i'm a developer from Brazil.
 
 Being able to create true works of visual art with lines of code is something that fascinated me about web development.
 
