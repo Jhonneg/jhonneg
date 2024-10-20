@@ -6,7 +6,7 @@
 
 # About me
 
-Hello, my name is Jhonne and front end development is my main focus.
+Hello, my name is Jhonne and i'm a developer from Brazil.
 
 Being able to create true works of visual art with lines of code is something that fascinated me about web development.
 
@@ -16,6 +16,6 @@ Since you can marry all these things together with web development, plus build a
 
 # Current tech stack
 
-[![Current tech stack](https://skillicons.dev/icons?i=html,css,js,react,typescript,tailwind,styledcomponents,nodejs,express,linux,bash,git,postgres,firebase,bun)](https://skillicons.dev)
+[![Current tech stack](https://skillicons.dev/icons?i=html,css,js,react,next,typescript,tailwind,styledcomponents,nodejs,express,linux,bash,git,postgres,firebase,bun)](https://skillicons.dev)
 
 # [Portfolio](https://jhonneg.is-a.dev/)
