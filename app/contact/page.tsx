@@ -5,7 +5,7 @@ import MailButton from "@/components/mailbutton.client";
 
 export default function Page() {
   return (
-    <div className="hero bg-base-200 min-h-screen">
+    <main className="hero bg-base-200 min-h-screen">
       <div className="hero-content text-center">
         <div className="max-w-md flex items-center justify-center flex-col">
           <h1 className="text-5xl font-bold mb-11">Get in contact</h1>
@@ -34,6 +34,6 @@ export default function Page() {
           <MailButton />
         </div>
       </div>
-    </div>
+    </main>
   );
 }

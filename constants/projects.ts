@@ -8,12 +8,12 @@ export type ProjectCardProps = {
 
 export const projectsData: ProjectCardProps[] = [
   {
-    name: "Quiz app",
-    techStack: ["Vue"],
-    description: "Quiz App built with Vue.js",
-    anchorLink: "https://jhonneg.github.io/vueQuiz/",
+    name: "Lain Chatbot",
+    techStack: ["Nuxt", "ChatGPT", "Tailwind"],
+    description: "Chatbot built with Nuxt and the ChatGPT Assistants AI",
+    anchorLink: "https://lainchat.netlify.app/",
     mediaUrl:
-      "https://github.com/user-attachments/assets/d9e9aab6-84f3-4570-8453-752ac60fba68",
+      "https://github.com/user-attachments/assets/4070c779-203d-47cf-b530-b457740c0661",
   },
   {
     name: "Multiplayer Pong",
@@ -48,11 +48,11 @@ export const projectsData: ProjectCardProps[] = [
       "https://github.com/user-attachments/assets/7bd3b2f7-c801-4c24-9d36-a0fc6e290271",
   },
   {
-    name: "Crown Clothing",
-    techStack: ["React", "Firebase", "Styled Components"],
-    description: "E-Commerce shop built with React",
-    anchorLink: "https://crownfashion.netlify.app/",
+    name: "Planets Express",
+    techStack: ["React", "Node/Express", "Docker", "Jest", "MongoDB"],
+    description: "Space flight Database",
+    anchorLink: "pongjs.onrender.com/",
     mediaUrl:
-      "https://github.com/user-attachments/assets/c0f9d2f5-bee0-4137-971d-2d232f4b57cc",
+      "https://github.com/user-attachments/assets/d2e253d2-c71a-45a5-ae65-424a65c9d794",
   },
 ];

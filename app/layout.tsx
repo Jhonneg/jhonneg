@@ -21,10 +21,8 @@ export default function RootLayout({
       <body
         className={`${roboto.className} text-center p-8 my-0 mx-auto max-w-7xl`}
       >
-        <main>
-          {children}
-          <Navbar />
-        </main>
+        <main>{children}</main>
+        <Navbar />
       </body>
     </html>
   );
