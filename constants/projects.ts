@@ -51,7 +51,7 @@ export const projectsData: ProjectCardProps[] = [
     name: "Planets Express",
     techStack: ["React", "Node/Express", "Docker", "Jest", "MongoDB"],
     description: "Space flight Database",
-    anchorLink: "pongjs.onrender.com/",
+    anchorLink: "https://pongjs.onrender.com/",
     mediaUrl:
       "https://github.com/user-attachments/assets/d2e253d2-c71a-45a5-ae65-424a65c9d794",
   },

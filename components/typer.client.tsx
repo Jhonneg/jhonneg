@@ -5,7 +5,7 @@ import { ReactTyped } from "react-typed";
 export default function Typer() {
   const text = [
     "A aspiring webdev",
-    "A linux entusiast",
+    "A linux enthusiast",
     "A aspiring 3D artist",
     "Front-end enjoyer",
   ];
