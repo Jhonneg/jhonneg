@@ -75,9 +75,7 @@ export default function Chat() {
           alt="Lain"
           className="w-full h-full object-cover"
           onError={(e) => {
-            // Fallback if image fails to load
             const target = e.target as HTMLImageElement;
-            target.onerror = null; // Prevent infinite loop
             target.style.display = "none";
             target.parentElement!.innerHTML = "AI";
           }}
