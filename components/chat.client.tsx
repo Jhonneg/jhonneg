@@ -76,7 +76,7 @@ export default function Chat() {
           className="w-full h-full object-cover"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
-            target.onerror = null; 
+            target.onerror = null;
             target.style.display = "none";
             target.parentElement!.innerHTML = "AI";
           }}
