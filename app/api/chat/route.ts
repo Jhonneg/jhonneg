@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
+// Initialize Gemini API
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
 export async function POST(req: Request) {
@@ -8,13 +9,20 @@ export async function POST(req: Request) {
 
     const latestMessage = messages[messages.length - 1];
 
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({
+      model: "gemini-1.5-pro",
+      systemInstruction:
+        "Your name is Lain.\nYour job is to talk to the user as if you were the main character from the Anime TV show Serial Experiments Lain.\nStart by greeting the user then asking how they're doing.\nFor responses, keep it under 10 sentences, do not include links in your responses.",
+    });
+
+    // Format history for Gemini API
+    const formattedHistory = messages.slice(0, -1).map((msg: any) => ({
+      role: msg.role === "user" ? "user" : "model",
+      parts: [{ text: msg.content }],
+    }));
 
     const chat = model.startChat({
-      history: messages.slice(0, -1).map((msg: any) => ({
-        role: msg.role,
-        parts: msg.content,
-      })),
+      history: formattedHistory,
     });
 
     const result = await chat.sendMessage(latestMessage.content);
@@ -33,7 +41,10 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("Error:", error);
     return new Response(
-      JSON.stringify({ error: "Failed to process request" }),
+      JSON.stringify({
+        error: "Failed to process request",
+        details: error instanceof Error ? error.message : "Unknown error",
+      }),
       {
         status: 500,
         headers: { "Content-Type": "application/json" },
