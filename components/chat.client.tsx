@@ -3,10 +3,10 @@ import Image from "next/image";
 import imageUrl from "@/public/Screenshot from 2024-10-07 04-31-15.png";
 import { useState, useRef, useEffect } from "react";
 
-interface Message {
+type Message = {
   role: "user" | "assistant";
   content: string;
-}
+};
 
 export default function Chat() {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -75,9 +75,8 @@ export default function Chat() {
           alt="Lain"
           className="w-full h-full object-cover"
           onError={(e) => {
-            // Fallback if image fails to load
             const target = e.target as HTMLImageElement;
-            target.onerror = null; // Prevent infinite loop
+            target.onerror = null; 
             target.style.display = "none";
             target.parentElement!.innerHTML = "AI";
           }}

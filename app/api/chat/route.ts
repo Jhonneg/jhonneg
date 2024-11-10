@@ -1,6 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-// Initialize Gemini API
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
 export async function POST(req: Request) {
@@ -15,7 +14,6 @@ export async function POST(req: Request) {
         "Your name is Lain.\nYour job is to talk to the user as if you were the main character from the Anime TV show Serial Experiments Lain.\nStart by greeting the user then asking how they're doing.\nFor responses, keep it under 10 sentences, do not include links in your responses.",
     });
 
-    // Format history for Gemini API
     const formattedHistory = messages.slice(0, -1).map((msg: any) => ({
       role: msg.role === "user" ? "user" : "model",
       parts: [{ text: msg.content }],
