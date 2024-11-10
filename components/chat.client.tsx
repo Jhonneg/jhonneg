@@ -1,6 +1,7 @@
 "use client";
+import Image from "next/image";
+import imageUrl from "@/public/Screenshot from 2024-10-07 04-31-15.png";
 import { useState, useRef, useEffect } from "react";
-import { Send, Loader2 } from "lucide-react";
 
 interface Message {
   role: "user" | "assistant";
@@ -56,20 +57,41 @@ export default function Chat() {
     }
   };
 
+  const MessageAvatar = ({ role }: { role: "user" | "assistant" }) => {
+    if (role === "user") {
+      return (
+        <div className="w-10 h-10 rounded-full bg-primary text-primary-content flex items-center justify-center">
+          You
+        </div>
+      );
+    }
+
+    return (
+      <div className="w-10 h-10 rounded-full bg-secondary overflow-hidden">
+        <Image
+          width={48}
+          height={48}
+          src={imageUrl}
+          alt="Lain"
+          className="w-full h-full object-cover"
+          onError={(e) => {
+            // Fallback if image fails to load
+            const target = e.target as HTMLImageElement;
+            target.onerror = null; // Prevent infinite loop
+            target.style.display = "none";
+            target.parentElement!.innerHTML = "AI";
+          }}
+        />
+      </div>
+    );
+  };
+
   return (
     <div className="flex flex-col h-screen bg-base-200">
-      {/* Header */}
-      <div className="navbar bg-base-100 shadow-lg">
-        <div className="flex-1">
-          <a className="btn btn-ghost text-xl">Present Day, Present Time</a>
-        </div>
-      </div>
-
-      {/* Chat Container */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.length === 0 && (
           <div className="text-center text-base-content/60 mt-8">
-            Start a conversation by sending a message below.
+            Present day, present time.
           </div>
         )}
 
@@ -82,15 +104,7 @@ export default function Chat() {
           >
             <div className="chat-image avatar">
               <div className="w-10 rounded-full">
-                <div
-                  className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                    message.role === "user"
-                      ? "bg-primary text-primary-content"
-                      : "bg-secondary text-secondary-content"
-                  }`}
-                >
-                  {message.role === "user" ? "U" : "AI"}
-                </div>
+                <MessageAvatar role={message.role} />
               </div>
             </div>
             <div
@@ -109,13 +123,11 @@ export default function Chat() {
           <div className="chat chat-start">
             <div className="chat-image avatar">
               <div className="w-10 rounded-full">
-                <div className="w-10 h-10 rounded-full bg-secondary text-secondary-content flex items-center justify-center">
-                  AI
-                </div>
+                <MessageAvatar role="assistant" />
               </div>
             </div>
             <div className="chat-bubble chat-bubble-secondary">
-              <span className="loading loading-dots loading-md"></span>
+              <span className="loading loading-spinner loading-md"></span>
             </div>
           </div>
         )}
@@ -142,7 +154,6 @@ export default function Chat() {
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Input Form */}
       <div className="p-4 bg-base-100">
         <form onSubmit={handleSubmit} className="flex gap-2">
           <input
@@ -159,9 +170,22 @@ export default function Chat() {
             disabled={isLoading || !input.trim()}
           >
             {isLoading ? (
-              <Loader2 className="w-5 h-5 animate-spin" />
+              <span className="loading loading-spinner"></span>
             ) : (
-              <Send className="w-5 h-5" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M2 21l21-9L2 3v7l15 2-15 2v7z"
+                />
+              </svg>
             )}
           </button>
         </form>
