@@ -126,7 +126,7 @@ export default function Chat() {
               </div>
             </div>
             <div className="chat-bubble chat-bubble-secondary">
-              <span className="loading loading-spinner loading-md"></span>
+              <span className="text-gray-500">Lain is typing...</span>
             </div>
           </div>
         )}
