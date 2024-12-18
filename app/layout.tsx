@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} text-center p-8 my-0 mx-auto max-w-7xl`}
+        className={`${roboto.className} mx-auto my-0 max-w-7xl p-8 text-center`}
       >
         <main>{children}</main>
         <Navbar />

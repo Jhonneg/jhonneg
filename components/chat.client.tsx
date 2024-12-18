@@ -60,20 +60,20 @@ export default function Chat() {
   const MessageAvatar = ({ role }: { role: "user" | "assistant" }) => {
     if (role === "user") {
       return (
-        <div className="w-10 h-10 rounded-full bg-primary text-primary-content flex items-center justify-center">
+        <div className="flex size-10 items-center justify-center rounded-full bg-primary text-primary-content">
           You
         </div>
       );
     }
 
     return (
-      <div className="w-10 h-10 rounded-full bg-secondary overflow-hidden">
+      <div className="size-10 overflow-hidden rounded-full bg-secondary">
         <Image
           width={48}
           height={48}
           src={imageUrl}
           alt="Lain"
-          className="w-full h-full object-cover"
+          className="size-full object-cover"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.onerror = null;
@@ -86,10 +86,10 @@ export default function Chat() {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-base-200">
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+    <div className="flex h-screen flex-col bg-base-200">
+      <div className="flex-1 space-y-4 overflow-y-auto p-4">
         {messages.length === 0 && (
-          <div className="text-center text-base-content/60 mt-8">
+          <div className="mt-8 text-center text-base-content/60">
             Present day, present time.
           </div>
         )}
@@ -101,7 +101,7 @@ export default function Chat() {
               message.role === "user" ? "chat-end" : "chat-start"
             }`}
           >
-            <div className="chat-image avatar">
+            <div className="avatar chat-image">
               <div className="w-10 rounded-full">
                 <MessageAvatar role={message.role} />
               </div>
@@ -120,7 +120,7 @@ export default function Chat() {
 
         {isLoading && (
           <div className="chat chat-start">
-            <div className="chat-image avatar">
+            <div className="avatar chat-image">
               <div className="w-10 rounded-full">
                 <MessageAvatar role="assistant" />
               </div>
@@ -135,7 +135,7 @@ export default function Chat() {
           <div className="alert alert-error">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="stroke-current shrink-0 h-6 w-6"
+              className="size-6 shrink-0 stroke-current"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -153,7 +153,7 @@ export default function Chat() {
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="p-4 bg-base-100">
+      <div className="bg-base-100 p-4">
         <form onSubmit={handleSubmit} className="flex gap-2">
           <input
             type="text"
@@ -176,7 +176,7 @@ export default function Chat() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                className="w-5 h-5"
+                className="size-5"
               >
                 <path
                   strokeLinecap="round"

@@ -4,9 +4,9 @@ import { ReactTyped } from "react-typed";
 
 export default function Page() {
   return (
-    <section className="flex flex-col my-24">
+    <section className="my-24 flex flex-col">
       <div className="mockup-code">
-        <h1 className="text-3xl my-4">My Tech Stack</h1>
+        <h1 className="my-4 text-3xl">My Tech Stack</h1>
         <pre data-prefix="$" className="text-warning">
           <code>
             installing

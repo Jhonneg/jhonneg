@@ -5,8 +5,8 @@ import ghSvg from "@/public/github-mark-white.svg";
 
 export default function Navbar() {
   return (
-    <nav className="navbar bg-neutral justify-center items-center">
-      <a href="https://github.com/jhonneg">
+    <nav className="navbar items-center justify-center rounded-3xl bg-neutral">
+      <a href="https://github.com/jhonneg" target="_blank">
         <Image
           className="animate-spin-slow"
           width="30"

@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero:hover {
+  .hero-overlay {
+    transition: 300ms;
+    opacity: 0;
+  }
+  .hero-content {
+    transition: 300ms;
+    opacity: 0;
+  }
+}

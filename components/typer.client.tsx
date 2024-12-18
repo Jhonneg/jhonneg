@@ -12,7 +12,7 @@ export default function Typer() {
 
   return (
     <>
-      <section className="bg-base-200 min-h-screen rounded-3xl flex items-center justify-center mb-12">
+      <section className="mb-12 flex min-h-screen items-center justify-center rounded-3xl bg-base-200">
         <div className="text-center">
           <div className="max-w-md">
             <div className="mb-14">

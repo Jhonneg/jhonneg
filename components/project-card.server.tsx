@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { ProjectCardProps } from "@/constants/projects";
 
@@ -9,28 +10,27 @@ export default function ProjectCard({
   techStack,
 }: ProjectCardProps) {
   return (
-    <a href={anchorLink}>
-      <div className="">
-        <div className="hero min-h-80">
+    <a href={anchorLink} target="_blank">
+      <div className="hero min-h-80 w-full ">
+        <div className="aspect-video">
           <video
-            width="570"
-            height="auto"
+            className="left-0 top-0 size-full object-cover object-center md:rounded-none lg:rounded-3xl"
             autoPlay
             loop
             muted
             src={mediaUrl}
           ></video>
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-neutral-content text-center">
-            <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold text-warning">{name}</h1>
-              <p className="mb-5 text-warning">{description}</p>
-              {techStack.map((tech, index) => (
-                <div key={index} className="badge badge-primary">
-                  {tech}
-                </div>
-              ))}
-            </div>
+        </div>
+        <div className="hero-overlay bg-opacity-60 sm:rounded-none lg:rounded-3xl"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold text-warning">{name}</h1>
+            <p className="mb-5 text-warning">{description}</p>
+            {techStack.map((tech, index) => (
+              <div key={index} className="badge badge-primary">
+                {tech}
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -5,12 +5,12 @@ import MailButton from "@/components/mailbutton.client";
 
 export default function Page() {
   return (
-    <main className="hero bg-base-200 min-h-screen">
-      <div className="hero-content text-center">
-        <div className="max-w-md flex items-center justify-center flex-col">
-          <h1 className="text-5xl font-bold mb-11">Get in contact</h1>
+    <main className="hero mb-12 min-h-screen rounded-3xl bg-base-200">
+      <div className="hero-content:hover:opacity-100 text-center">
+        <div className="flex max-w-md flex-col items-center justify-center">
+          <h1 className="mb-11 text-5xl font-bold">Get in contact</h1>
           <div className="mr-10">
-            <div className="flex justify-center items-center py-4">
+            <div className="flex items-center justify-center py-4">
               <Image
                 className="mx-4 animate-spin-slow"
                 width="30"
@@ -20,7 +20,7 @@ export default function Page() {
               />
               <span>@jonee2</span>
             </div>
-            <div className="flex justify-center items-center py-4">
+            <div className="flex items-center justify-center py-4">
               <Image
                 className="mx-4 animate-spin-slow"
                 width="30"
