@@ -14,7 +14,7 @@ export default function ProjectCard({
       <div className="hero min-h-80 w-full ">
         <div className="aspect-video">
           <video
-            className="left-0 top-0 size-full object-cover object-center md:rounded-none lg:rounded-3xl"
+            className="left-0 top-0 size-full  object-cover object-center md:rounded-none lg:rounded-3xl"
             autoPlay
             loop
             muted
