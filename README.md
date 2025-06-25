@@ -16,6 +16,6 @@ Since you can marry all these things together with web development, plus build a
 
 # Current tech stack
 
-[![Current tech stack](https://skillicons.dev/icons?i=html,css,js,react,next,typescript,tailwind,styledcomponents,nodejs,express,linux,bash,git,postgres,firebase,bun)](https://skillicons.dev)
+[![Current tech stack](https://skillicons.dev/icons?i=html,css,js,react,next,typescript,tailwind,styledcomponents,nodejs,express,linux,bash,git,postgres,firebase,bun,python)](https://skillicons.dev)
 
 # [Portfolio](https://jhonneg.is-a.dev/)
