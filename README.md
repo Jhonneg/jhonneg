@@ -14,8 +14,16 @@ Plus the possibility of putting in practice problem solving skills, searching fo
 
 Since you can marry all these things together with web development, plus build a career on top of that, i've found what i'm passionate about.
 
+<div align=center>
+  
 # Current tech stack
+<h3>Webdev</h3>
+  
+[![Current tech stack](https://skillicons.dev/icons?i=html,css,js,react,jest,next,typescript,tailwind,styledcomponents,nodejs,express,git,postgres,firebase,mongodb,docker)](https://skillicons.dev)
 
-[![Current tech stack](https://skillicons.dev/icons?i=html,css,js,react,next,typescript,tailwind,styledcomponents,nodejs,express,linux,bash,git,postgres,firebase,bun,python)](https://skillicons.dev)
+<h3>Python</h3>
+
+[![Current tech stack](https://skillicons.dev/icons?i=python,anaconda,kafka)](https://skillicons.dev)
+</div>
 
 # [Portfolio](https://jhonneg.is-a.dev/)
