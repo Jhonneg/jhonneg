@@ -1,5 +1,6 @@
 import ProjectCard from "@/components/project-card.server";
-import { projectsData } from "@/constants/projects";
+import { projectsDataPython } from "@/constants/projects";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -12,8 +13,18 @@ export default function Page() {
             </div>
           </div>
         </section>
+        <nav className="navbar items-center justify-center rounded-3xl bg-neutral">
+          <ul className="menu menu-horizontal px-1">
+            <li>
+              <Link href="js">Javascript</Link>
+            </li>
+            <li>
+              <Link href="python">Python</Link>
+            </li>
+          </ul>
+        </nav>
         <div className="my-12 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-2">
-          {projectsData.map((projects) => (
+          {projectsDataPython.map((projects) => (
             <ProjectCard
               key={projects.name}
               name={projects.name}

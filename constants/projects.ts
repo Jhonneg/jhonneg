@@ -6,6 +6,14 @@ export type ProjectCardProps = {
   techStack: string[];
 };
 
+export type ProjectCardPythonProps = {
+  name: string;
+  description: string;
+  anchorLink: string;
+  mediaUrl: string;
+  techStack: string[];
+};
+
 export const projectsData: ProjectCardProps[] = [
   {
     name: "Lain Chatbot",
@@ -54,5 +62,23 @@ export const projectsData: ProjectCardProps[] = [
     anchorLink: "https://pongjs.onrender.com/",
     mediaUrl:
       "https://github.com/user-attachments/assets/d2e253d2-c71a-45a5-ae65-424a65c9d794",
+  },
+];
+
+export const projectsDataPython: ProjectCardPythonProps[] = [
+  {
+    name: "Commandline Quiz game",
+    techStack: ["Python", "Bash"],
+    description: "Trivia quiz app built with Python and the http library",
+    anchorLink: "https://github.com/Jhonneg/python_trivia",
+    mediaUrl:
+      "https://raw.githubusercontent.com/Jhonneg/python_trivia/refs/heads/main/image.png",
+  },
+  {
+    name: "More soon",
+    techStack: ["Python"],
+    description: ":^)",
+    anchorLink: "https://github.com/jhonneg",
+    mediaUrl: "",
   },
 ];

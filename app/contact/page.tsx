@@ -28,7 +28,7 @@ export default function Page() {
                 src={ytSvg}
                 alt="discord-logo"
               />
-              <span>@Joneewars2</span>
+              <span>@Jonee15</span>
             </div>
           </div>
           <MailButton />
