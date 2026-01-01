@@ -1,0 +1,29 @@
+# "An idiot admires complexity, a genius admires simplicity."
+
+🌎 Diadema, São Paulo.
+
+:envelope: jonee4339@hotmail.com
+
+# About me
+
+Hello, my name is Jhonne and i'm a developer from Brazil.
+
+Being able to create true works of visual art with lines of code is something that fascinated me about web development.
+
+Plus the possibility of putting in practice problem solving skills, searching for pratical solutions and having a creative outlet allows me to grow as a developer.
+
+Since you can marry all these things together with web development, plus build a career on top of that, i've found what i'm passionate about.
+
+<div align=center>
+  
+# Current tech stack
+<h3>Webdev</h3>
+  
+[![Current tech stack](https://skillicons.dev/icons?i=html,css,js,react,jest,next,typescript,tailwind,styledcomponents,nodejs,express,git,postgres,firebase,mongodb,docker)](https://skillicons.dev)
+
+<h3>Python</h3>
+
+[![Current tech stack](https://skillicons.dev/icons?i=python,anaconda,kafka)](https://skillicons.dev)
+</div>
+
+# [Portfolio](https://jhonneg.is-a.dev/)
