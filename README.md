@@ -23,7 +23,7 @@ Since you can marry all these things together with web development, plus build a
 
 <h3>Python</h3>
 
-[![Current tech stack](https://skillicons.dev/icons?i=python,anaconda,kafka)](https://skillicons.dev)
+[![Current tech stack](https://skillicons.dev/icons?i=python,anaconda)](https://skillicons.dev)
 </div>
 
 # [Portfolio](https://jhonneg.is-a.dev/)
