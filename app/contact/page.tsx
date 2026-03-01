@@ -1,7 +1,6 @@
 import Image from "next/image";
 import discordSvg from "@/public/icons8-discord.svg";
-import ytSvg from "@/public/icons8-youtube.svg";
-import MailButton from "@/components/mailbutton.client";
+import { WhatsAppButton } from "@/components/whatsappbutton.client";
 
 export default function Page() {
   return (
@@ -20,18 +19,8 @@ export default function Page() {
               />
               <span>@jonee2</span>
             </div>
-            <div className="flex items-center justify-center py-4">
-              <Image
-                className="mx-4 animate-spin-slow"
-                width="30"
-                height="30"
-                src={ytSvg}
-                alt="discord-logo"
-              />
-              <span>@Jonee15</span>
-            </div>
           </div>
-          <MailButton />
+          <WhatsAppButton />
         </div>
       </div>
     </main>

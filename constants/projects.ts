@@ -72,13 +72,26 @@ export const projectsDataPython: ProjectCardPythonProps[] = [
     description: "Trivia quiz app built with Python and the http library",
     anchorLink: "https://github.com/Jhonneg/python_trivia",
     mediaUrl:
-      "https://raw.githubusercontent.com/Jhonneg/python_trivia/refs/heads/main/image.png",
+      "https://github.com/user-attachments/assets/721627a0-d506-4379-b543-c8a95593e157",
   },
   {
-    name: "More soon",
-    techStack: ["Python"],
-    description: ":^)",
-    anchorLink: "https://github.com/jhonneg",
-    mediaUrl: "",
+    name: "ReAct Agent",
+    techStack: ["Python", "ChatGPT", "Jupyter Notebooks"],
+    description:
+      "Implementation of a simple ReAct agent using OpenAI's GPT models.",
+
+    anchorLink: "https://github.com/Jhonneg/py-react",
+    mediaUrl:
+      "https://private-user-images.githubusercontent.com/94491571/521244490-8969cbac-c4d2-4681-8b75-8a32c10b40ab.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIzOTcxMzAsIm5iZiI6MTc3MjM5NjgzMCwicGF0aCI6Ii85NDQ5MTU3MS81MjEyNDQ0OTAtODk2OWNiYWMtYzRkMi00NjgxLThiNzUtOGEzMmMxMGI0MGFiLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzAxVDIwMjcxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIzNWFiNDhlY2I4MzIxYTBmZWVjNDhhMDQzM2NkMzIzMDExNDM5MzRhOGNmOGZiNTcxY2JlMzdiZGM1YWY4NjMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.7EWrctJTBE1dbXfe_tRKNuhy4Qk0t_4hQvvgAeKBozo",
+  },
+  {
+    name: "RAG App",
+    techStack: ["Python", "ChatGPT", "Streamlit", "Langchain", "Pinecone"],
+    description:
+      "A Retrieval-Augmented Generation pipeline built using Python, OpenAI, Langchain.",
+
+    anchorLink: "https://pythonrag.streamlit.app/",
+    mediaUrl:
+      " https://github.com/user-attachments/assets/854c6cb5-f96e-4f12-a4bb-49464491a077",
   },
 ];
