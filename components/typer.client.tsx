@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { ReactTyped } from "react-typed";
+import BlobBackground from "./blobbackground.client";
 
 export default function Typer() {
   const text = [
@@ -9,22 +10,23 @@ export default function Typer() {
     "Check out the projects tab",
     "A linux enthusiast",
     "Learning data enginnering",
-    "Check out the chat tab too",
+    "Did you like the gradient background?",
   ];
 
   return (
     <>
-      <section className="mb-12 flex min-h-screen items-center justify-center rounded-3xl border border-primary/20 bg-base-200">
-        <div className="text-center">
+      <section className="relative mb-12 flex min-h-screen items-center justify-center overflow-hidden rounded-3xl border border-primary/20 bg-base-200">
+        <BlobBackground />
+        <div className="relative z-10 text-center">
           <div className="max-w-md">
             <div className="mb-14">
               <h1 className="text-4xl font-bold">Hello, I&apos;m Jhonne</h1>
               <ReactTyped strings={text} typeSpeed={50} loop cursorChar="" />
             </div>
             <p>
-              I&apos;m a developer from Brazil focused on solutions for the web,
-              i enjoy building things and now i&apos;m learning data related
-              stuff.
+              A Full-Stack Developer focused on backend. I build
+              and deploy web APIs and apps with Node.js, React, Docker and AWS,
+              and I’m exploring AI with Python (RAG and LLM APIs).
             </p>
           </div>
         </div>

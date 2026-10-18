@@ -20,31 +20,19 @@ export default function Page() {
           </code>
         </pre>
         <pre data-prefix=">">
-          <code>Linux/Shell bash</code>
-        </pre>
-        <pre data-prefix=">" className="text-success">
-          <code>Git/Github/Gitbash</code>
-        </pre>
-        <pre data-prefix=">" className="text-success">
-          <code>HTML/CSS/Javascript</code>
-        </pre>
-        <pre data-prefix=">" className="text-success">
-          <code>Tailwind/Styles Components</code>
-        </pre>
-        <pre data-prefix=">" className="text-success">
-          <code>React/NextJs</code>
-        </pre>
-        <pre data-prefix=">" className="text-success">
-          <code>Node/Express</code>
-        </pre>
-        <pre data-prefix=">" className="text-success">
-          <code>Socket.io</code>
-        </pre>
-        <pre data-prefix=">" className="text-success">
-          <code>Typescript</code>
-        </pre>
-        <pre data-prefix=">" className="text-success">
-          <code>PostgresSQL/Firebase</code>
+          <code>
+            I’m a career changer. I’ve worked since 2016 in a job where <br />
+            deadlines, planning and quality checks are real, and I brought that
+            <br />
+            discipline into programming. I taught myself to build full-stack
+            <br />
+            apps, and I deploy them: tested APIs, Docker containers, CI/CD with
+            <br />
+            GitHub Actions, AWS EC2. I also build with Python and LLMs,
+            <br />
+            including a RAG app over private PDFs. I’m looking for a team where
+            <br />I can contribute to real products and keep growing.
+          </code>
         </pre>
       </div>
     </section>
