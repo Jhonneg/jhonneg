@@ -26,8 +26,9 @@ function checkLocale(html, locale) {
 const portuguese = await getPage();
 checkLocale(portuguese, "pt-BR");
 assert.ok(portuguese.includes("Desenvolvedor Full-Stack Júnior"));
-assert.ok(portuguese.includes("Solicitar CV por e-mail"));
-assert.ok(portuguese.includes("mailto:jonee4339@hotmail.com"));
+assert.ok(portuguese.includes("Baixar currículo (PT-BR)"));
+assert.ok(portuguese.includes('href="/CVWEB2026.pdf"'));
+assert.ok(portuguese.includes('download="Jhonne-Guerra-CV-PT-BR.pdf"'));
 const videos = portuguese.match(/<video\b[^>]*>/g) ?? [];
 assert.equal(videos.length, 3);
 for (const video of videos) {
@@ -78,7 +79,7 @@ const englishCookie = await selectLanguage("en");
 const english = await getPage("/", englishCookie);
 checkLocale(english, "en");
 assert.ok(english.includes("Junior Full-Stack Developer"));
-assert.ok(english.includes("Request CV by email"));
+assert.ok(english.includes("Download CV (Portuguese)"));
 assert.ok(english.includes('<meta name="description" content="Jhonne'));
 assert.ok(english.includes('<meta property="og:locale" content="en"'));
 
@@ -93,6 +94,15 @@ for (const route of [
 }
 checkLocale(await getPage("/", "portfolio-locale=invalid"), "pt-BR");
 checkLocale(await getPage("/", await selectLanguage("pt-BR")), "pt-BR");
+const pdfResponse = await fetch(`${origin}/CVWEB2026.pdf`);
+assert.equal(pdfResponse.status, 200, "CV file must be served");
+assert.match(
+  pdfResponse.headers.get("content-type") ?? "",
+  /application\/pdf/i,
+);
+const pdfBytes = new Uint8Array(await pdfResponse.arrayBuffer());
+assert.ok(pdfBytes.length > 80000);
+assert.equal(new TextDecoder().decode(pdfBytes.slice(0, 5)), "%PDF-");
 console.log(
-  "PASS: PT default, EN/PT actions, cookie persistence, reload/deep-link rendering, localized metadata/navigation, invalid-cookie fallback and three background videos.",
+  "PASS: PT default, EN/PT actions, cookie persistence, reload/deep links, localized metadata/navigation, PDF route, and three background videos.",
 );

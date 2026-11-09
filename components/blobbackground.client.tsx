@@ -8,7 +8,7 @@ export default function BlobBackground() {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]">
       <div className="absolute inset-0 scale-125 opacity-50 blur-3xl">
-        <Blob />
+        {/* <Blob /> */}
       </div>
     </div>
   );

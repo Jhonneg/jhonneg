@@ -49,7 +49,8 @@ export default function Typer() {
                 {t.hero.projects}
               </Link>
               <a
-                href={`mailto:jonee4339@hotmail.com?subject=${encodeURIComponent(t.hero.cvSubject)}`}
+                href="/CVWEB2026.pdf"
+                download="Jhonne-Guerra-CV-PT-BR.pdf"
                 className="btn btn-outline rounded-full px-7 text-base"
               >
                 {t.hero.cv}
