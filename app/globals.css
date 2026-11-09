@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.project-overlay {
+  transition: opacity 300ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-card:not([data-failed="true"])
+    .project-media:hover
+    .project-overlay {
+    opacity: 0;
+  }
+}
+
+.project-card .project-media:focus-visible .project-overlay {
+  opacity: 1;
+}
+
 :root {
   color-scheme: dark;
 }

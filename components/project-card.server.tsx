@@ -1,39 +1,85 @@
 "use client";
-import React from "react";
-import { ProjectCardProps } from "@/constants/projects";
+
+import { useState } from "react";
+import type { ProjectCardProps } from "@/constants/projects";
+import { useLanguage } from "./language-provider.client";
 
 export default function ProjectCard({
   name,
-  description,
   anchorLink,
   mediaUrl,
   techStack,
-}: ProjectCardProps) {
+  sourceLink,
+  linkKind = "demo",
+  className = "",
+}: ProjectCardProps & { className?: string }) {
+  const { t } = useLanguage();
+  const [failed, setFailed] = useState(false);
+
   return (
-    <a href={anchorLink} target="_blank">
-      <div className="hero min-h-80 w-full ">
-        <div className="aspect-video">
-          <video
-            className="left-0 top-0 size-full  object-cover object-center md:rounded-none lg:rounded-3xl"
-            autoPlay
-            loop
-            muted
-            src={mediaUrl}
-          ></video>
-        </div>
-        <div className="hero-overlay bg-opacity-60 sm:rounded-none lg:rounded-3xl"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold text-warning">{name}</h1>
-            <p className="mb-5 text-warning">{description}</p>
-            {techStack.map((tech, index) => (
-              <div key={index} className="badge badge-primary">
+    <article
+      className={`project-card flex min-w-0 flex-col overflow-hidden rounded-3xl border border-primary/30 bg-base-200 ${className}`}
+      data-failed={failed}
+    >
+      <a
+        href={anchorLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`${linkKind === "source" ? t.gallery.source : t.gallery.demo}: ${name} (${t.featured.newTab})`}
+        className="project-media relative grid min-h-96 flex-1 place-items-center bg-base-300 p-6 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-warning sm:p-8"
+      >
+        <video
+          className="pointer-events-none absolute inset-0 size-full object-contain"
+          src={mediaUrl.trim()}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
+          onError={() => {
+            setFailed(true);
+          }}
+        />
+        <div className="project-overlay pointer-events-none absolute inset-0 bg-base-300/90" />
+        <div className="project-overlay relative max-w-xl text-left">
+          <h2 className="break-words text-2xl font-bold text-warning sm:text-3xl">
+            {name}
+          </h2>
+          <p className="mt-4 text-sm leading-7 text-base-content sm:text-base">
+            {t.projects[name]}
+          </p>
+          <ul aria-label={name} className="mt-5 flex flex-wrap gap-2">
+            {techStack.map((tech) => (
+              <li
+                key={tech}
+                className="badge badge-primary h-auto min-h-6 py-1"
+              >
                 {tech}
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
+          <p className="mt-6 text-sm text-warning underline">
+            {linkKind === "source" ? t.gallery.sourceOnly : t.gallery.demo} ↗
+          </p>
         </div>
+      </a>
+      {failed && (
+        <p role="status" className="px-5 pt-4 text-sm text-warning">
+          {t.gallery.unavailable}
+        </p>
+      )}
+      <div className="flex flex-wrap items-center gap-2 border-t border-primary/20 p-3">
+        <a
+          href={sourceLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${t.gallery.source}: ${name} (${t.featured.newTab})`}
+          className="link link-warning ml-auto inline-flex min-h-11 items-center px-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-warning"
+        >
+          {t.gallery.source} ↗
+        </a>
       </div>
-    </a>
+    </article>
   );
 }

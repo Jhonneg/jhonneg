@@ -1,22 +1,21 @@
+import type { FeaturedProjectName } from "@/lib/i18n/dictionaries";
+
 export type ProjectCardProps = {
-  name: string;
+  name: FeaturedProjectName;
   description: string;
   anchorLink: string;
   mediaUrl: string;
   techStack: string[];
+  sourceLink: string;
+  linkKind?: "demo" | "source";
 };
 
-export type ProjectCardPythonProps = {
-  name: string;
-  description: string;
-  anchorLink: string;
-  mediaUrl: string;
-  techStack: string[];
-};
+export type ProjectCardPythonProps = ProjectCardProps;
 
 export const projectsData: ProjectCardProps[] = [
   {
     name: "Lain Chatbot",
+    sourceLink: "https://github.com/Jhonneg/lainChatbot",
     techStack: ["Nuxt", "ChatGPT", "Tailwind"],
     description: "Chatbot built with Nuxt and the ChatGPT Assistants AI",
     anchorLink: "https://lainchat.netlify.app/",
@@ -25,14 +24,17 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name: "Multiplayer Pong",
+    sourceLink: "https://github.com/Jhonneg/PongJS",
+    linkKind: "source",
     techStack: ["Node", "Socket.io"],
     description: "Multiplayer Pong game build with Node/Express and Socket.io",
-    anchorLink: "https://pongjs-production.up.railway.app/",
+    anchorLink: "https://github.com/Jhonneg/PongJS",
     mediaUrl:
       "https://github.com/Jhonneg/PongJS/assets/94491571/733b62cc-e616-4380-9c98-c13c5e75b717",
   },
   {
     name: "Games stores App",
+    sourceLink: "https://github.com/Jhonneg/gamesStoreApp",
     techStack: ["NextJS", "React", "Tailwind"],
     description: "Find games stores near you",
     anchorLink: "https://gamenext.netlify.app/",
@@ -41,6 +43,8 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name: "Discord weather bot",
+    sourceLink: "https://github.com/Jhonneg/DiscordJS",
+    linkKind: "source",
     techStack: ["Node", "Express"],
     description: "Discord weather bot built with DiscordJS",
     anchorLink: "https://github.com/Jhonneg/DiscordJS",
@@ -49,6 +53,7 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name: "Face Recognition App",
+    sourceLink: "https://github.com/Jhonneg/smartbrainJSX",
     techStack: ["React", "Tailwind"],
     description: "Build with React and TailwindCSS",
     anchorLink: "https://smartbrian.netlify.app/",
@@ -57,9 +62,11 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name: "Planets Express",
+    sourceLink: "https://github.com/Jhonneg/planetsExpress",
+    linkKind: "source",
     techStack: ["React", "Node/Express", "Docker", "Jest", "MongoDB"],
     description: "Space flight Database",
-    anchorLink: "https://pongjs.onrender.com/",
+    anchorLink: "https://github.com/Jhonneg/planetsExpress",
     mediaUrl:
       "https://github.com/user-attachments/assets/d2e253d2-c71a-45a5-ae65-424a65c9d794",
   },
@@ -68,6 +75,8 @@ export const projectsData: ProjectCardProps[] = [
 export const projectsDataPython: ProjectCardPythonProps[] = [
   {
     name: "Commandline Quiz game",
+    sourceLink: "https://github.com/Jhonneg/python_trivia",
+    linkKind: "source",
     techStack: ["Python", "Bash"],
     description: "Trivia quiz app built with Python and the http library",
     anchorLink: "https://github.com/Jhonneg/python_trivia",
@@ -76,16 +85,19 @@ export const projectsDataPython: ProjectCardPythonProps[] = [
   },
   {
     name: "ReAct Agent",
+    sourceLink: "https://github.com/Jhonneg/py-react",
+    linkKind: "source",
     techStack: ["Python", "ChatGPT", "Jupyter Notebooks"],
     description:
       "Implementation of a simple ReAct agent using OpenAI's GPT models.",
 
     anchorLink: "https://github.com/Jhonneg/py-react",
     mediaUrl:
-      "https://private-user-images.githubusercontent.com/94491571/521244490-8969cbac-c4d2-4681-8b75-8a32c10b40ab.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIzOTcxMzAsIm5iZiI6MTc3MjM5NjgzMCwicGF0aCI6Ii85NDQ5MTU3MS81MjEyNDQ0OTAtODk2OWNiYWMtYzRkMi00NjgxLThiNzUtOGEzMmMxMGI0MGFiLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzAxVDIwMjcxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIzNWFiNDhlY2I4MzIxYTBmZWVjNDhhMDQzM2NkMzIzMDExNDM5MzRhOGNmOGZiNTcxY2JlMzdiZGM1YWY4NjMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.7EWrctJTBE1dbXfe_tRKNuhy4Qk0t_4hQvvgAeKBozo",
+      "https://github.com/user-attachments/assets/8969cbac-c4d2-4681-8b75-8a32c10b40ab",
   },
   {
     name: "RAG App",
+    sourceLink: "https://github.com/Jhonneg/py-rag",
     techStack: ["Python", "ChatGPT", "Streamlit", "Langchain", "Pinecone"],
     description:
       "A Retrieval-Augmented Generation pipeline built using Python, OpenAI, Langchain.",
