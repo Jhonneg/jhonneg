@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { dictionaries } from "@/lib/i18n/dictionaries";
 import { getLocale } from "@/lib/i18n/server";
+import { portfolioMetadata } from "@/lib/seo";
+
+export function generateMetadata() {
+  return portfolioMetadata("/about", "about");
+}
 
 const stack = [
   {
@@ -123,6 +128,22 @@ export default function Page() {
             >
               {about.projects.view} →
             </Link>
+          </section>
+
+          <section aria-labelledby="education-command">
+            <h2
+              id="education-command"
+              className="text-xl font-semibold text-warning"
+            >
+              <span aria-hidden="true">$ </span>
+              {about.education.heading}
+            </h2>
+            <p className="mt-4 text-base leading-8 text-base-content">
+              {about.education.course} · {about.education.school}
+            </p>
+            <p className="mt-1 text-sm text-base-content/80">
+              {about.education.date}
+            </p>
           </section>
         </div>
       </div>

@@ -4,6 +4,11 @@ import { WhatsAppButton } from "@/components/whatsappbutton.client";
 import { contact } from "@/constants/contact";
 import { dictionaries } from "@/lib/i18n/dictionaries";
 import { getLocale } from "@/lib/i18n/server";
+import { portfolioMetadata } from "@/lib/seo";
+
+export function generateMetadata() {
+  return portfolioMetadata("/contact", "contact");
+}
 
 export default function Page() {
   const { contact: copy } = dictionaries[getLocale()];

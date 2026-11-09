@@ -26,6 +26,12 @@ const en = {
       rag: "RAG App — Python retrieval-augmented generation",
       view: "Open projects gallery",
     },
+    education: {
+      heading: "cat education.txt",
+      course: "Systems Analysis and Development",
+      school: "Faculdade Anhanguera",
+      date: "Expected completion: December 2026",
+    },
   },
   contact: {
     title: "Get in touch",
@@ -64,6 +70,25 @@ const en = {
     title: "Jhonne | Junior Full-Stack Developer",
     description:
       "Jhonne's portfolio: junior full-stack development with a backend focus. Explore web, real-time and Python projects and get in touch.",
+    imageAlt: "Jhonne Guerra — Junior Full-Stack Developer portfolio",
+    pages: {
+      about: {
+        title: "About Jhonne | Junior Full-Stack Developer",
+        description: "Meet Jhonne, a developer in Brazil building backend and full-stack personal projects with Node.js, React and Python.",
+      },
+      contact: {
+        title: "Contact Jhonne | Junior Full-Stack Developer",
+        description: "Contact Jhonne about junior backend or full-stack opportunities by email or LinkedIn, and download his Portuguese CV.",
+      },
+      projectsJs: {
+        title: "JavaScript Projects | Jhonne Guerra",
+        description: "Explore Jhonne's personal JavaScript projects, including an Express space-flight API, multiplayer Pong and full-stack applications.",
+      },
+      projectsPython: {
+        title: "Python Projects | Jhonne Guerra",
+        description: "Explore Jhonne's personal Python projects, including a RAG pipeline, a ReAct agent and a command-line quiz.",
+      },
+    },
   },
   navigation: {
     label: "Primary navigation",
@@ -107,7 +132,7 @@ const en = {
     "Discord weather bot":
       "Discord weather bot built with Discord.js and Node.js.",
     "Face Recognition App":
-      "Face-recognition interface built with React and Tailwind CSS.",
+      "Face-recognition app built with Next.js and the Clarifai API.",
     "Commandline Quiz game":
       "Command-line trivia quiz built with Python and HTTP requests.",
     "ReAct Agent":
@@ -149,6 +174,12 @@ const ptBR: Dictionary = {
       rag: "RAG App — Retrieval Augmented Generation em Python",
       view: "Abrir galeria de projetos",
     },
+    education: {
+      heading: "cat education.txt",
+      course: "Análise e Desenvolvimento de Sistemas",
+      school: "Faculdade Anhanguera",
+      date: "Previsão de conclusão: dezembro de 2026",
+    },
   },
   contact: {
     title: "Entre em contato",
@@ -188,6 +219,25 @@ const ptBR: Dictionary = {
     title: "Jhonne | Desenvolvedor Full-Stack Júnior",
     description:
       "Portfólio de Jhonne: desenvolvimento full-stack júnior com foco em back-end. Conheça projetos web, em tempo real e com Python e entre em contato.",
+    imageAlt: "Portfólio de Jhonne Guerra — Desenvolvedor Full-Stack Júnior",
+    pages: {
+      about: {
+        title: "Sobre Jhonne | Desenvolvedor Full-Stack Júnior",
+        description: "Conheça Jhonne, desenvolvedor no Brasil com projetos pessoais de back-end e full-stack usando Node.js, React e Python.",
+      },
+      contact: {
+        title: "Contato | Jhonne Guerra",
+        description: "Entre em contato com Jhonne para oportunidades de desenvolvimento back-end ou full-stack júnior e baixe seu currículo em português.",
+      },
+      projectsJs: {
+        title: "Projetos JavaScript | Jhonne Guerra",
+        description: "Conheça projetos pessoais de Jhonne em JavaScript, incluindo API Express de voos espaciais, Pong multiplayer e aplicações full-stack.",
+      },
+      projectsPython: {
+        title: "Projetos Python | Jhonne Guerra",
+        description: "Conheça projetos pessoais de Jhonne em Python, incluindo pipeline RAG, agente ReAct e quiz de linha de comando.",
+      },
+    },
   },
   navigation: {
     label: "Navegação principal",
@@ -231,7 +281,7 @@ const ptBR: Dictionary = {
     "Discord weather bot":
       "Bot de previsão do tempo para Discord desenvolvido com Discord.js e Node.js.",
     "Face Recognition App":
-      "Interface de reconhecimento facial desenvolvida com React e Tailwind CSS.",
+      "Aplicação de reconhecimento facial desenvolvida com Next.js e a API Clarifai.",
     "Commandline Quiz game":
       "Quiz de perguntas e respostas no terminal, desenvolvido com Python e requisições HTTP.",
     "ReAct Agent":

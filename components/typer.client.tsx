@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import { useEffect, useState } from "react";
 import { ReactTyped } from "react-typed";
 import Link from "next/link";
 import BlobBackground from "./blobbackground.client";
@@ -8,6 +8,15 @@ import { useLanguage } from "./language-provider.client";
 export default function Typer() {
   const { locale, t } = useLanguage();
   const text = ["Node.js · React · Docker · AWS", "Python · RAG · LLM APIs"];
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const updateMotion = () => setReducedMotion(motion.matches);
+    updateMotion();
+    motion.addEventListener("change", updateMotion);
+    return () => motion.removeEventListener("change", updateMotion);
+  }, []);
 
   return (
     <>
@@ -25,14 +34,18 @@ export default function Typer() {
               </p>
               <div className="mt-3 min-h-14 text-sm text-warning sm:min-h-7 sm:text-base">
                 <span aria-hidden="true">
-                  <ReactTyped
-                    key={locale}
-                    strings={text}
-                    typeSpeed={50}
-                    backSpeed={25}
-                    loop
-                    cursorChar=""
-                  />
+                  {reducedMotion ? (
+                    text.join(" / ")
+                  ) : (
+                    <ReactTyped
+                      key={locale}
+                      strings={text}
+                      typeSpeed={50}
+                      backSpeed={25}
+                      loop
+                      cursorChar=""
+                    />
+                  )}
                 </span>
               </div>
             </div>

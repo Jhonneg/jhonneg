@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { ProjectCardProps } from "@/constants/projects";
 import { useLanguage } from "./language-provider.client";
+import ProjectVideo from "./project-video.client";
 
 export default function ProjectCard({
   name,
@@ -28,15 +29,10 @@ export default function ProjectCard({
         aria-label={`${linkKind === "source" ? t.gallery.source : t.gallery.demo}: ${name} (${t.featured.newTab})`}
         className="project-media relative grid min-h-96 flex-1 place-items-center bg-base-300 p-6 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-warning sm:p-8"
       >
-        <video
+        <ProjectVideo
+          name={name}
           className="pointer-events-none absolute inset-0 size-full object-contain"
-          src={mediaUrl.trim()}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-hidden="true"
+          mediaUrl={mediaUrl}
           onError={() => {
             setFailed(true);
           }}

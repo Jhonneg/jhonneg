@@ -32,11 +32,13 @@ assert.ok(portuguese.includes('download="Jhonne-Guerra-CV-PT-BR.pdf"'));
 const videos = portuguese.match(/<video\b[^>]*>/g) ?? [];
 assert.equal(videos.length, 3);
 for (const video of videos) {
-  assert.match(video, /autoPlay/i);
+  assert.match(video, /poster="\/posters\/[^"]+\.webp"/i);
+  assert.match(video, /preload="none"/i);
   assert.match(video, /muted/i);
   assert.match(video, /loop/i);
   assert.match(video, /playsInline/i);
   assert.doesNotMatch(video, /controls/i);
+  assert.doesNotMatch(video, /src="https?:/i);
 }
 
 const manifest = JSON.parse(
@@ -104,5 +106,5 @@ const pdfBytes = new Uint8Array(await pdfResponse.arrayBuffer());
 assert.ok(pdfBytes.length > 80000);
 assert.equal(new TextDecoder().decode(pdfBytes.slice(0, 5)), "%PDF-");
 console.log(
-  "PASS: PT default, EN/PT actions, cookie persistence, reload/deep links, localized metadata/navigation, PDF route, and three background videos.",
+  "PASS: PT default, EN/PT actions, cookie persistence, reload/deep links, localized metadata/navigation, PDF route, and three lazy background videos with posters.",
 );

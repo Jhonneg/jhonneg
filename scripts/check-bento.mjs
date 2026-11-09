@@ -148,14 +148,18 @@ try {
   );
   for (const route of ["js", "python"]) {
     await page.goto(origin + "/projects/" + route);
-    await page.waitForFunction(
-      () =>
-        [...document.querySelectorAll(".project-card video")].every(
-          (v) => v.videoWidth > 0 && !v.error,
-        ),
-      null,
-      { timeout: 25000 },
-    );
+    const videos = page.locator(".project-card video");
+    for (let index = 0; index < await videos.count(); index++) {
+      await videos.nth(index).scrollIntoViewIfNeeded();
+      await page.waitForFunction(
+        (index) => {
+          const video = document.querySelectorAll(".project-card video")[index];
+          return video.videoWidth > 0 && !video.error;
+        },
+        index,
+        { timeout: 25000 },
+      );
+    }
     console.log(
       "PASS all media loads for",
       route,
@@ -166,6 +170,20 @@ try {
       ),
     );
   }
+  await page.goto(origin + "/projects/python");
+  const rag = page.locator(".project-card").filter({
+    has: page.getByRole("heading", { name: "RAG App", exact: true }),
+  });
+  assert.equal(
+    await rag.locator(".project-media").getAttribute("href"),
+    "https://github.com/Jhonneg/py-rag",
+  );
+  await page.goto(origin + "/");
+  assert.equal(
+    await page.getByRole("link", { name: /RAG App.*new tab|RAG App.*nova aba/ }).getAttribute("href"),
+    "https://github.com/Jhonneg/py-rag",
+  );
+  console.log("PASS RAG uses its verified source while the Streamlit demo is inaccessible");
   await page.goto(origin + "/projects/js");
   const lain = page.locator(".project-card").filter({
     has: page.getByRole("heading", { name: "Lain Chatbot", exact: true }),

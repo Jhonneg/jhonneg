@@ -54,8 +54,8 @@ export const projectsData: ProjectCardProps[] = [
   {
     name: "Face Recognition App",
     sourceLink: "https://github.com/Jhonneg/smartbrainJSX",
-    techStack: ["React", "Tailwind"],
-    description: "Build with React and TailwindCSS",
+    techStack: ["Next.js", "React", "Tailwind CSS", "Clarifai API"],
+    description: "Face recognition app built with Next.js and the Clarifai API",
     anchorLink: "https://smartbrian.netlify.app/",
     mediaUrl:
       "https://github.com/user-attachments/assets/7bd3b2f7-c801-4c24-9d36-a0fc6e290271",
@@ -98,11 +98,12 @@ export const projectsDataPython: ProjectCardPythonProps[] = [
   {
     name: "RAG App",
     sourceLink: "https://github.com/Jhonneg/py-rag",
+    linkKind: "source",
     techStack: ["Python", "ChatGPT", "Streamlit", "Langchain", "Pinecone"],
     description:
       "A Retrieval-Augmented Generation pipeline built using Python, OpenAI, Langchain.",
 
-    anchorLink: "https://pythonrag.streamlit.app/",
+    anchorLink: "https://github.com/Jhonneg/py-rag",
     mediaUrl:
       " https://github.com/user-attachments/assets/854c6cb5-f96e-4f12-a4bb-49464491a077",
   },

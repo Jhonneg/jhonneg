@@ -32,12 +32,15 @@ try {
         await page.locator("h1").innerText(),
         locale === "en" ? "About me" : "Sobre mim",
       );
-      for (const command of ["whoami", "cat stack.json", "ls projects/"]) {
+      for (const command of ["whoami", "cat stack.json", "ls projects/", "cat education.txt"]) {
         assert.equal(
           await page.getByRole("heading", { name: command }).count(),
           1,
         );
       }
+      assert.ok(
+        await page.getByText("Faculdade Anhanguera", { exact: false }).isVisible(),
+      );
       assert.equal(
         await page.getByText("installing", { exact: false }).count(),
         0,

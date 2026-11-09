@@ -29,6 +29,11 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .project-card .project-media:hover .project-overlay,
+  .featured-project-card:hover > div {
+    opacity: 1 !important;
+  }
+
   *,
   *::before,
   *::after {

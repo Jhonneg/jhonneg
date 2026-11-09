@@ -1,25 +1,16 @@
-import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar.server";
 import { LanguageProvider } from "@/components/language-provider.client";
 import { getLocale } from "@/lib/i18n/server";
 import { dictionaries } from "@/lib/i18n/dictionaries";
+import { portfolioMetadata } from "@/lib/seo";
 
 const roboto = Roboto_Mono({ subsets: ["latin"] });
 
-export function generateMetadata(): Metadata {
-  const locale = getLocale();
-  const { title, description } = dictionaries[locale].metadata;
+export function generateMetadata() {
   return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "website",
-      locale: locale.replace("-", "_"),
-    },
+    ...portfolioMetadata(),
     icons: "https://img.icons8.com/ios-filled/50/FFFFFF/source-code.png",
   };
 }
