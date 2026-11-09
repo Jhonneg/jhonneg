@@ -144,9 +144,9 @@ const ptBR: Dictionary = {
     projects: {
       heading: "ls projects/",
       intro: "Alguns projetos para conhecer:",
-      planets: "Planets Express — API Express e dados de voos espaciais",
+      planets: "Planets Express — API feita com Express e dados de voos espaciais",
       pong: "Multiplayer Pong — jogo em tempo real com Socket.io",
-      rag: "RAG App — geração aumentada por recuperação em Python",
+      rag: "RAG App — Retrieval Augmented Generation em Python",
       view: "Abrir galeria de projetos",
     },
   },
@@ -235,7 +235,7 @@ const ptBR: Dictionary = {
     "Commandline Quiz game":
       "Quiz de perguntas e respostas no terminal, desenvolvido com Python e requisições HTTP.",
     "ReAct Agent":
-      "Agente ReAct em Python que usa modelos da OpenAI e ferramentas para resolver consultas.",
+      "Agente ReAct em Python desenvolvido do zero que usa modelos da OpenAI e ferramentas para resolver consultas.",
     "Multiplayer Pong":
       "Jogo multiplayer desenvolvido com Node.js, Express e Socket.io para comunicação em tempo real.",
     "Lain Chatbot":
