@@ -11,6 +11,7 @@
 
 # next.js
 /.next/
+/.next-dev/
 /out/
 
 # production
@@ -52,4 +53,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-

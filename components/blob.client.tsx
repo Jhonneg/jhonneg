@@ -101,9 +101,9 @@ function BlobMesh() {
     () => ({
       uTime: { value: 0 },
       uAmp: { value: 0.35 },
-      uC1: { value: new THREE.Color("#c9a064") }, 
-      uC2: { value: new THREE.Color("#b5446e") }, 
-      uC3: { value: new THREE.Color("#6d4cff") },
+      uC1: { value: new THREE.Color("#1c131b") },
+      uC2: { value: new THREE.Color("#c59f60") },
+      uC3: { value: new THREE.Color("#db924b") },
     }),
     [],
   );
@@ -125,7 +125,6 @@ function BlobMesh() {
       delta,
     );
     mesh.current.rotation.y += delta * 0.15;
-
 
     const speed = prev.current.distanceTo(pointer) / Math.max(delta, 0.001);
     prev.current.copy(pointer);
@@ -154,7 +153,7 @@ function BlobMesh() {
 export default function Blob() {
   return (
     <Canvas
-      dpr={1} 
+      dpr={1}
       camera={{ position: [0, 0, 5], fov: 45 }}
       eventSource={document.body}
       eventPrefix="client"
