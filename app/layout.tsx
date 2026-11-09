@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang={locale} data-theme="coffee">
       <body
-        className={`${roboto.className} mx-auto my-0 max-w-7xl p-4 text-center sm:p-8`}
+        className={`${roboto.className} mx-auto my-0 max-w-7xl p-4 pb-[var(--mobile-nav-clearance)] text-center md:p-8`}
       >
         <LanguageProvider locale={locale}>
           <a
@@ -42,10 +42,10 @@ export default function RootLayout({
           >
             {dictionaries[locale].navigation.skip}
           </a>
+          <Navbar />
           <main id="main-content" tabIndex={-1}>
             {children}
           </main>
-          <Navbar />
         </LanguageProvider>
       </body>
     </html>

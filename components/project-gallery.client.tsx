@@ -29,13 +29,10 @@ export default function ProjectGallery({
   return (
     <section className="mb-12 text-left" aria-labelledby="gallery-title">
       <header className="rounded-3xl border border-primary/20 bg-base-200 px-6 py-10 sm:p-10">
-        <h1
-          id="gallery-title"
-          className="text-4xl font-bold text-warning sm:text-5xl"
-        >
+        <h1 id="gallery-title" className="text-display font-bold text-warning">
           {t.gallery.title}
         </h1>
-        <p className="mt-4 max-w-2xl text-base leading-8 text-base-content">
+        <p className="mt-4 max-w-reading text-base leading-8 text-base-content">
           {t.gallery.intro}
         </p>
       </header>

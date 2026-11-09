@@ -54,7 +54,7 @@ try {
         ),
       );
 
-      if (width === 1440 || width === 375) {
+      if (width === 1440 || width === 375 || width === 320) {
         await page.screenshot({
           path: `/tmp/jhonneg-about-${width}-${locale}.png`,
           fullPage: true,
@@ -108,7 +108,7 @@ try {
         true,
       );
 
-      if (width === 1440 || width === 375) {
+      if (width === 1440 || width === 375 || width === 320) {
         await page.screenshot({
           path: `/tmp/jhonneg-contact-${width}-${locale}.png`,
           fullPage: true,

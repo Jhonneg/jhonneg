@@ -20,6 +20,7 @@
 
 :root {
   color-scheme: dark;
+  --mobile-nav-clearance: calc(9rem + env(safe-area-inset-bottom));
 }
 
 body {

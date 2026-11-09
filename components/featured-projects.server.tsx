@@ -21,7 +21,10 @@ export default function FeaturedProjects() {
           <p className="text-sm uppercase tracking-[0.2em] text-warning">
             {t.featured.eyebrow}
           </p>
-          <h2 id="featured-projects-title" className="mt-2 text-3xl font-bold">
+          <h2
+            id="featured-projects-title"
+            className="mt-2 text-section font-bold"
+          >
             {t.featured.title}
           </h2>
         </div>

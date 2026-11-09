@@ -16,11 +16,11 @@ export default function Page() {
         </p>
         <h1
           id="contact-title"
-          className="mt-4 text-4xl font-bold text-warning sm:text-5xl"
+          className="mt-4 text-display font-bold text-warning"
         >
           {copy.title}
         </h1>
-        <p className="mt-5 max-w-2xl text-base leading-8 text-base-content">
+        <p className="mt-5 max-w-reading text-base leading-8 text-base-content">
           {copy.intro}
         </p>
         <a

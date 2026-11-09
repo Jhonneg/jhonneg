@@ -25,7 +25,7 @@ export default function LanguageToggle() {
   }
 
   return (
-    <div>
+    <div className="relative">
       <div
         role="group"
         aria-label={t.language.label}
@@ -53,7 +53,10 @@ export default function LanguageToggle() {
         ))}
       </div>
       {error && (
-        <p role="alert" className="max-w-xs text-sm text-warning">
+        <p
+          role="alert"
+          className="absolute bottom-full right-0 z-10 mb-2 w-52 rounded-xl border border-warning/40 bg-base-100 p-3 text-sm text-warning shadow-lg md:bottom-auto md:top-full md:mb-0 md:mt-2"
+        >
           {t.language.error}
         </p>
       )}

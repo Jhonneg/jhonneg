@@ -19,9 +19,7 @@ export default function Typer() {
               <p className="mb-4 text-sm uppercase tracking-[0.24em] text-warning">
                 {t.hero.eyebrow}
               </p>
-              <h1 className="text-4xl font-bold sm:text-6xl">
-                {t.hero.greeting}
-              </h1>
+              <h1 className="text-display font-bold">{t.hero.greeting}</h1>
               <p className="mt-5 text-lg text-warning sm:text-xl">
                 {t.hero.role}
               </p>
@@ -38,7 +36,7 @@ export default function Typer() {
                 </span>
               </div>
             </div>
-            <p className="mx-auto max-w-xl leading-8 text-base-content/80 sm:text-lg">
+            <p className="mx-auto max-w-reading leading-8 text-base-content/80 sm:text-lg">
               {t.hero.description}
             </p>
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">

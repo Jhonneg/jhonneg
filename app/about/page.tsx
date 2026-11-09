@@ -21,13 +21,10 @@ export default function Page() {
   return (
     <article className="mb-12 text-left" aria-labelledby="about-title">
       <header className="mb-6 rounded-3xl border border-primary/20 bg-base-200 px-6 py-10 sm:p-10">
-        <h1
-          id="about-title"
-          className="text-4xl font-bold text-warning sm:text-5xl"
-        >
+        <h1 id="about-title" className="text-display font-bold text-warning">
           {about.title}
         </h1>
-        <p className="mt-4 max-w-2xl leading-8 text-base-content">
+        <p className="mt-4 max-w-reading leading-8 text-base-content">
           {about.intro}
         </p>
       </header>
@@ -54,7 +51,7 @@ export default function Page() {
               <span aria-hidden="true">$ </span>
               {about.whoami.heading}
             </h2>
-            <div className="mt-4 max-w-3xl space-y-4 text-base leading-8 text-base-content">
+            <div className="mt-4 max-w-reading space-y-4 text-base leading-8 text-base-content">
               <p>{about.whoami.story}</p>
               <p>{about.whoami.practice}</p>
             </div>
