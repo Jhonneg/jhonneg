@@ -7,7 +7,7 @@ const en = {
     whoami: {
       heading: "whoami",
       story:
-        "I'm Jhonne, a developer from Brazil making a career transition into software development. I enjoy solving practical problems and building applications that people can use.",
+        "I'm Jhonne, a software developer focused on back-end work and curious about more than just making an application run: I like understanding how its parts communicate and what happens behind the interface. I started in web development, building interfaces and working with APIs. Over time, I went deeper into servers, databases, and infrastructure. That path led me to build projects ranging from a space-launch API with Node.js, MongoDB, and Docker to a multiplayer game that uses WebSockets for real-time communication. More recently, I've been exploring microservice architectures with TypeScript, messaging with RabbitMQ, and AI applications in Python, including RAG and agents that use tools. I'm transitioning into a software development career and finishing my degree in Systems Analysis and Development. I'm looking for my first opportunity in the field, where I can apply this hands-on experience to real projects and keep growing alongside other developers.",
       practice:
         "My personal projects include an Express API for space-flight data, a real-time multiplayer game with Socket.io, and Python experiments with RAG and language models. I’m looking to grow with a team working on backend or full-stack products.",
     },
@@ -74,19 +74,23 @@ const en = {
     pages: {
       about: {
         title: "About Jhonne | Junior Full-Stack Developer",
-        description: "Meet Jhonne, a developer in Brazil building backend and full-stack personal projects with Node.js, React and Python.",
+        description:
+          "Meet Jhonne, a developer in Brazil building backend and full-stack personal projects with Node.js, React and Python.",
       },
       contact: {
         title: "Contact Jhonne | Junior Full-Stack Developer",
-        description: "Contact Jhonne about junior backend or full-stack opportunities by email or LinkedIn, and download his Portuguese CV.",
+        description:
+          "Contact Jhonne about junior backend or full-stack opportunities by email or LinkedIn, and download his Portuguese CV.",
       },
       projectsJs: {
         title: "JavaScript Projects | Jhonne Guerra",
-        description: "Explore Jhonne's personal JavaScript projects, including an Express space-flight API, multiplayer Pong and full-stack applications.",
+        description:
+          "Explore Jhonne's personal JavaScript projects, including an Express space-flight API, multiplayer Pong and full-stack applications.",
       },
       projectsPython: {
         title: "Python Projects | Jhonne Guerra",
-        description: "Explore Jhonne's personal Python projects, including a RAG pipeline, a ReAct agent and a command-line quiz.",
+        description:
+          "Explore Jhonne's personal Python projects, including a RAG pipeline, a ReAct agent and a command-line quiz.",
       },
     },
   },
@@ -111,7 +115,7 @@ const en = {
     greeting: "Hello, I'm Jhonne",
     role: "Junior Full-Stack Developer · Backend Focused",
     description:
-      "I build web APIs and full-stack applications with Node.js and React. My projects also explore real-time communication with Socket.io and AI with Python, RAG and LLM APIs.",
+      "I build web applications and backend systems, from REST APIs and real-time communication to containerized services and cloud deployments. My work spans Node.js, React, Docker, and AWS, with a growing interest in distributed systems and AI.",
     projects: "View projects",
     cv: "Download CV (Portuguese)",
     contact: "Get in touch",
@@ -155,7 +159,7 @@ const ptBR: Dictionary = {
     whoami: {
       heading: "whoami",
       story:
-        "Sou Jhonne, desenvolvedor do Brasil em transição de carreira para a área de software. Gosto de resolver problemas práticos e construir aplicações que as pessoas possam usar.",
+        "Sou Jhonne, desenvolvedor de software com foco em back-end e uma curiosidade que vai além de fazer uma aplicação funcionar: gosto de entender como suas diferentes partes se comunicam e o que acontece por trás da interface. Comecei pelo desenvolvimento web, criando interfaces e consumindo APIs. Com o tempo, fui me aprofundando no lado dos servidores, bancos de dados e infraestrutura. Essa evolução me levou a construir desde uma API de lançamentos espaciais com Node.js, MongoDB e Docker até um jogo multiplayer com comunicação em tempo real usando WebSockets. Mais recentemente, venho explorando arquiteturas de microsserviços com TypeScript, mensageria com RabbitMQ e aplicações de IA em Python, incluindo RAG e agentes com ferramentas. Estou em transição de carreira e concluindo minha graduação em Análise e Desenvolvimento de Sistemas. Busco minha primeira oportunidade na área, onde possa transformar essa experiência prática em contribuições para projetos reais e continuar evoluindo com outros desenvolvedores.",
       practice:
         "Meus projetos pessoais incluem uma API Express para dados de voos espaciais, um jogo multiplayer em tempo real com Socket.io e experimentos em Python com RAG e modelos de linguagem. Quero crescer com uma equipe que trabalhe em produtos de back-end ou full-stack.",
     },
@@ -260,7 +264,7 @@ const ptBR: Dictionary = {
     greeting: "Olá, sou Jhonne",
     role: "Desenvolvedor Full-Stack Júnior · Foco em Back-end",
     description:
-      "Desenvolvo APIs web e aplicações full-stack com Node.js e React. Meus projetos também exploram comunicação em tempo real com Socket.io e IA com Python, RAG e APIs de LLMs.",
+      "Desenvolvo aplicações web e sistemas de back-end, de APIs REST e comunicação em tempo real a serviços containerizados e soluções em nuvem. Meus projetos usam Node.js, React, Docker e AWS, e tenho interesse crescente em microserviços e IA.",
     projects: "Ver projetos",
     cv: "Baixar currículo (PT-BR)",
     contact: "Entrar em contato",
