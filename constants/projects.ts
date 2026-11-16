@@ -33,13 +33,13 @@ export const projectsData: ProjectCardProps[] = [
       "https://github.com/Jhonneg/PongJS/assets/94491571/733b62cc-e616-4380-9c98-c13c5e75b717",
   },
   {
-    name: "Games stores App",
-    sourceLink: "https://github.com/Jhonneg/gamesStoreApp",
-    techStack: ["NextJS", "React", "Tailwind"],
-    description: "Find games stores near you",
-    anchorLink: "https://gamenext.netlify.app/",
+    name: "Lina",
+    sourceLink: "https://github.com/Jhonneg/Lina",
+    techStack: ["Next.js", "React", "Three.js", "PostgreSQL", "OpenAI"],
+    description: "A 3D conversational orb made in React and ThreeJs",
+    anchorLink: "https://ai-lina.netlify.app/",
     mediaUrl:
-      "https://github.com/user-attachments/assets/47cfa631-03a9-4ade-aeea-7ed6f1a724d8",
+      "https://github.com/user-attachments/assets/681f6b66-fa26-48c7-9698-8d23b3831821",
   },
   {
     name: "Discord weather bot",

@@ -131,8 +131,8 @@ const en = {
   projects: {
     "Planets Express":
       "Space-flight application with a React interface and a Node.js/Express API, MongoDB storage, Docker and Jest tests.",
-    "Games stores App":
-      "Web application built with Next.js and React to find nearby game stores.",
+    Lina:
+      "A 3D conversational orb made in React and ThreeJs",
     "Discord weather bot":
       "Discord weather bot built with Discord.js and Node.js.",
     "Face Recognition App":
@@ -280,8 +280,8 @@ const ptBR: Dictionary = {
   projects: {
     "Planets Express":
       "Aplicação de voos espaciais com interface em React e API Node.js/Express, armazenamento em MongoDB, Docker e testes com Jest.",
-    "Games stores App":
-      "Aplicação web desenvolvida com Next.js e React para encontrar lojas de jogos próximas.",
+    Lina:
+      "Um orbe 3D conversacional feito com React e ThreeJs",
     "Discord weather bot":
       "Bot de previsão do tempo para Discord desenvolvido com Discord.js e Node.js.",
     "Face Recognition App":

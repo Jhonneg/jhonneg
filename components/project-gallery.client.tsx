@@ -17,7 +17,7 @@ export default function ProjectGallery({
           "Planets Express",
           "Multiplayer Pong",
           "Lain Chatbot",
-          "Games stores App",
+          "Lina",
           "Discord weather bot",
           "Face Recognition App",
         ]
