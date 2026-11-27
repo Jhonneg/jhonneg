@@ -220,7 +220,7 @@ try {
         .reduce((s, v, i) => s + v * [0.2126, 0.7152, 0.0722][i], 0);
     }
     const overlay = rgb(
-      getComputedStyle(document.querySelector(".project-overlay"))
+      getComputedStyle(document.querySelector(".project-panel"))
         .backgroundColor,
     );
     const worst = overlay

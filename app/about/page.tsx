@@ -29,9 +29,7 @@ export default function Page() {
         <h1 id="about-title" className="text-display font-bold text-warning">
           {about.title}
         </h1>
-        <p className="mt-4 max-w-reading leading-8 text-base-content">
-          {about.intro}
-        </p>
+        <p className="mt-4 max-w-reading leading-8 text-cream">{about.intro}</p>
       </header>
 
       <div className="overflow-hidden rounded-3xl border border-primary/30 bg-base-200 shadow-lg">
@@ -42,9 +40,7 @@ export default function Page() {
           <span className="size-3 rounded-full bg-warning" />
           <span className="size-3 rounded-full bg-primary" />
           <span className="size-3 rounded-full bg-base-content/40" />
-          <span className="ml-3 text-xs text-base-content/70">
-            jhonne@portfolio:~
-          </span>
+          <span className="ml-3 text-xs text-cream/70">jhonne@portfolio:~</span>
         </div>
 
         <div className="space-y-10 px-5 py-8 sm:p-10">
@@ -57,7 +53,7 @@ export default function Page() {
                 <span aria-hidden="true">$ </span>
                 {about.whoami.heading}
               </h2>
-              <div className="mt-4 max-w-reading space-y-4 text-base leading-8 text-base-content">
+              <div className="mt-4 max-w-reading space-y-4 text-base leading-8 text-cream">
                 <p>{about.whoami.story}</p>
                 <p>{about.whoami.built}</p>
                 <p>{about.whoami.goal}</p>
@@ -81,7 +77,7 @@ export default function Page() {
                     <dt className="font-semibold text-warning">
                       {about.stack[key]}
                     </dt>
-                    <dd className="mt-2 break-words text-sm leading-7 text-base-content">
+                    <dd className="mt-2 break-words text-sm leading-7 text-cream">
                       {technologies.join(" · ")}
                     </dd>
                   </div>
@@ -98,8 +94,8 @@ export default function Page() {
               <span aria-hidden="true">$ </span>
               {about.projects.heading}
             </h2>
-            <p className="mt-4 text-base-content">{about.projects.intro}</p>
-            <ul className="mt-3 space-y-2 text-sm leading-7 text-base-content sm:text-base">
+            <p className="mt-4 text-cream">{about.projects.intro}</p>
+            <ul className="mt-3 space-y-2 text-sm leading-7 text-cream sm:text-base">
               <li>
                 <Link
                   href="/projects/js"
@@ -141,12 +137,10 @@ export default function Page() {
               <span aria-hidden="true">$ </span>
               {about.education.heading}
             </h2>
-            <p className="mt-4 text-base leading-8 text-base-content">
+            <p className="mt-4 text-base leading-8 text-cream">
               {about.education.course} · {about.education.school}
             </p>
-            <p className="mt-1 text-sm text-base-content/80">
-              {about.education.date}
-            </p>
+            <p className="mt-1 text-sm text-cream/80">{about.education.date}</p>
           </section>
         </div>
       </div>

@@ -6,6 +6,11 @@
   transition: opacity 300ms ease;
 }
 
+/* Text panel on project cards: keeps copy readable over any video frame. */
+.project-panel {
+  backdrop-filter: blur(2px);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .project-card:not([data-failed="true"])
     .project-media:hover

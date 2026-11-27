@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        // Matches the body text color in globals.css (daisyUI's base-content is gold).
+        cream: "#F4E5CF",
+      },
       fontSize: {
         display: [
           "clamp(2rem, 5vw, 3.75rem)",

@@ -25,7 +25,7 @@ export default function Page() {
         >
           {copy.title}
         </h1>
-        <p className="mt-5 max-w-reading text-base leading-8 text-base-content">
+        <p className="mt-5 max-w-reading text-base leading-8 text-cream">
           {copy.intro}
         </p>
         <a
@@ -42,7 +42,7 @@ export default function Page() {
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <article className="flex min-w-0 flex-col rounded-3xl border border-primary/30 bg-base-200 p-6 sm:p-8">
             <h3 className="text-xl font-semibold text-warning">{copy.email}</h3>
-            <p className="mt-4 break-all text-base-content">{contact.email}</p>
+            <p className="mt-4 break-all text-cream">{contact.email}</p>
             <a
               href={`mailto:${contact.email}`}
               className="btn btn-warning mt-8 min-h-11 w-fit rounded-full px-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-warning"
@@ -54,7 +54,7 @@ export default function Page() {
             <h3 className="text-xl font-semibold text-warning">
               {copy.linkedIn}
             </h3>
-            <p className="mt-4 break-words text-base-content">
+            <p className="mt-4 break-words text-cream">
               linkedin.com/in/jhonne-guerra-505494197
             </p>
             <a
@@ -83,7 +83,7 @@ export default function Page() {
             <h3 className="text-lg font-semibold text-warning">
               {copy.discord}
             </h3>
-            <p className="mt-3 text-sm text-base-content">{copy.discordHelp}</p>
+            <p className="mt-3 text-sm text-cream">{copy.discordHelp}</p>
             <div className="mt-5 flex items-center gap-3">
               <Image
                 className="motion-safe:animate-spin-slow"

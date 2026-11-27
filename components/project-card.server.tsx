@@ -27,7 +27,7 @@ export default function ProjectCard({
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`${linkKind === "source" ? t.gallery.source : t.gallery.demo}: ${name} (${t.featured.newTab})`}
-        className="project-media relative grid min-h-96 flex-1 place-items-center bg-base-300 p-6 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-warning sm:p-8"
+        className="project-media relative flex min-h-96 flex-1 items-end bg-base-300 p-4 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-warning sm:p-5"
       >
         <ProjectVideo
           name={name}
@@ -37,15 +37,15 @@ export default function ProjectCard({
             setFailed(true);
           }}
         />
-        <div className="project-overlay pointer-events-none absolute inset-0 bg-base-300/90" />
-        <div className="project-overlay relative max-w-xl text-left">
-          <h2 className="break-words text-2xl font-bold text-warning sm:text-3xl">
+        <div className="project-overlay pointer-events-none absolute inset-0 bg-base-300/50" />
+        <div className="project-overlay project-panel relative w-full max-w-xl rounded-2xl border border-primary/20 bg-base-300/90 p-5 text-left">
+          <h2 className="break-words text-xl font-bold text-warning sm:text-2xl">
             {name}
           </h2>
-          <p className="mt-4 text-sm leading-7 text-base-content sm:text-base">
+          <p className="mt-3 text-sm leading-6 text-cream">
             {t.projects[name]}
           </p>
-          <ul aria-label={name} className="mt-5 flex flex-wrap gap-2">
+          <ul aria-label={name} className="mt-4 flex flex-wrap gap-2">
             {techStack.map((tech) => (
               <li
                 key={tech}
@@ -55,7 +55,7 @@ export default function ProjectCard({
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-sm text-warning underline">
+          <p className="mt-4 text-sm text-warning underline">
             {linkKind === "source" ? t.gallery.sourceOnly : t.gallery.demo} ↗
           </p>
         </div>

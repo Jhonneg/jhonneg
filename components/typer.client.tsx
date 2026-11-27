@@ -20,19 +20,19 @@ export default function Typer() {
 
   return (
     <>
-      <section className="relative mb-8 flex items-center justify-center overflow-hidden rounded-3xl border border-primary/20 bg-base-200 px-5 py-12 sm:px-8 sm:py-16">
+      <section className="relative mb-8 flex items-center justify-center overflow-hidden rounded-3xl border border-primary/20 bg-base-200 px-5 py-10 sm:px-8 sm:py-12">
         <BlobBackground />
         <div className="relative z-10 text-center">
           <div className="max-w-2xl">
             <div className="mb-8">
-              <p className="mb-4 text-sm uppercase tracking-[0.24em] text-warning">
+              <p className="mb-4 text-xs uppercase tracking-[0.14em] text-warning sm:text-sm sm:tracking-[0.24em]">
                 {t.hero.eyebrow}
               </p>
               <h1 className="text-display font-bold">{t.hero.greeting}</h1>
               <p className="mt-5 text-lg text-warning sm:text-xl">
                 {t.hero.role}
               </p>
-              <div className="mt-3 min-h-14 text-sm text-warning sm:min-h-7 sm:text-base">
+              <div className="mt-3 min-h-14 text-sm text-cream/70 sm:min-h-7 sm:text-base">
                 <span aria-hidden="true">
                   {reducedMotion ? (
                     text.join(" / ")
@@ -49,7 +49,7 @@ export default function Typer() {
                 </span>
               </div>
             </div>
-            <p className="mx-auto max-w-reading leading-8 text-base-content/80 sm:text-lg">
+            <p className="mx-auto max-w-reading leading-8 text-cream sm:text-lg">
               {t.hero.description}
             </p>
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">

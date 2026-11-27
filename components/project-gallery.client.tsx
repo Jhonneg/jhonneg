@@ -32,7 +32,7 @@ export default function ProjectGallery({
         <h1 id="gallery-title" className="text-display font-bold text-warning">
           {t.gallery.title}
         </h1>
-        <p className="mt-4 max-w-reading text-base leading-8 text-base-content">
+        <p className="mt-4 max-w-reading text-base leading-8 text-cream">
           {t.gallery.intro}
         </p>
       </header>

@@ -12,7 +12,7 @@
         "officialSorting": true
       }
     ],
-    "tailwindcss/no-custom-classname": "warn",
+    "tailwindcss/no-custom-classname": ["warn", { "whitelist": ["project-panel"] }],
     "tailwindcss/no-contradicting-classname": "error"
   }
 }

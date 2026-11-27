@@ -48,22 +48,22 @@ export default function FeaturedProjects() {
               target="_blank"
               rel="noreferrer"
               aria-label={`${sourceOnly ? t.featured.source : t.featured.demo}: ${project.name} (${t.featured.newTab})`}
-              className="featured-project-card group relative flex min-h-80 items-center justify-center overflow-hidden rounded-2xl border border-primary/20 bg-base-200 text-center transition hover:border-warning/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-warning"
+              className="featured-project-card group relative flex min-h-80 items-end overflow-hidden rounded-2xl border border-primary/20 bg-base-200 text-left transition hover:border-warning/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-warning"
             >
               <ProjectVideo
                 name={project.name}
                 className="pointer-events-none absolute inset-0 size-full object-cover"
                 mediaUrl={project.mediaUrl}
               />
-              <div className="pointer-events-none absolute inset-0 bg-base-300/70 transition-opacity duration-300 group-hover:opacity-0 group-focus-visible:opacity-100" />
-              <div className="relative z-10 flex flex-col items-center p-5 transition-opacity duration-300 group-hover:opacity-0 group-focus-visible:opacity-100">
+              <div className="pointer-events-none absolute inset-0 bg-base-300/50 transition-opacity duration-300 group-hover:opacity-0 group-focus-visible:opacity-100" />
+              <div className="relative z-10 m-3 w-[calc(100%-1.5rem)] rounded-xl border border-primary/20 bg-base-300/90 p-4 transition-opacity duration-300 group-hover:opacity-0 group-focus-visible:opacity-100">
                 <h3 className="text-xl font-bold text-warning">
                   {project.name}
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-warning">
+                <p className="mt-2 text-sm leading-6 text-cream">
                   {t.projects[name]}
                 </p>
-                <div className="mt-5 flex flex-wrap justify-center gap-2">
+                <div className="mt-4 flex flex-wrap gap-2">
                   {project.techStack.map((tech) => (
                     <span key={tech} className="badge badge-primary badge-sm">
                       {tech}
