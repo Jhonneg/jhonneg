@@ -48,44 +48,47 @@ export default function Page() {
         </div>
 
         <div className="space-y-10 px-5 py-8 sm:p-10">
-          <section aria-labelledby="whoami-command">
-            <h2
-              id="whoami-command"
-              className="text-xl font-semibold text-warning"
-            >
-              <span aria-hidden="true">$ </span>
-              {about.whoami.heading}
-            </h2>
-            <div className="mt-4 max-w-reading space-y-4 text-base leading-8 text-base-content">
-              <p>{about.whoami.story}</p>
-              <p>{about.whoami.practice}</p>
-            </div>
-          </section>
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] lg:gap-12">
+            <section aria-labelledby="whoami-command">
+              <h2
+                id="whoami-command"
+                className="text-xl font-semibold text-warning"
+              >
+                <span aria-hidden="true">$ </span>
+                {about.whoami.heading}
+              </h2>
+              <div className="mt-4 max-w-reading space-y-4 text-base leading-8 text-base-content">
+                <p>{about.whoami.story}</p>
+                <p>{about.whoami.built}</p>
+                <p>{about.whoami.goal}</p>
+              </div>
+            </section>
 
-          <section aria-labelledby="stack-command">
-            <h2
-              id="stack-command"
-              className="text-xl font-semibold text-warning"
-            >
-              <span aria-hidden="true">$ </span>
-              {about.stack.heading}
-            </h2>
-            <dl className="mt-4 grid gap-4 sm:grid-cols-2">
-              {stack.map(({ key, technologies }) => (
-                <div
-                  key={key}
-                  className="min-w-0 rounded-2xl border border-primary/20 bg-base-300/50 p-5"
-                >
-                  <dt className="font-semibold text-warning">
-                    {about.stack[key]}
-                  </dt>
-                  <dd className="mt-2 break-words text-sm leading-7 text-base-content">
-                    {technologies.join(" · ")}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </section>
+            <section aria-labelledby="stack-command">
+              <h2
+                id="stack-command"
+                className="text-xl font-semibold text-warning"
+              >
+                <span aria-hidden="true">$ </span>
+                {about.stack.heading}
+              </h2>
+              <dl className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+                {stack.map(({ key, technologies }) => (
+                  <div
+                    key={key}
+                    className="min-w-0 rounded-2xl border border-primary/20 bg-base-300/50 p-5"
+                  >
+                    <dt className="font-semibold text-warning">
+                      {about.stack[key]}
+                    </dt>
+                    <dd className="mt-2 break-words text-sm leading-7 text-base-content">
+                      {technologies.join(" · ")}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          </div>
 
           <section aria-labelledby="projects-command">
             <h2

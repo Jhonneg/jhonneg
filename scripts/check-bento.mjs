@@ -178,12 +178,17 @@ try {
     await rag.locator(".project-media").getAttribute("href"),
     "https://github.com/Jhonneg/py-rag",
   );
+  assert.equal(
+    await rag.locator('a[href="https://github.com/Jhonneg/py-rag"]').count(),
+    1,
+    "Source-only cards must not repeat the same source link in a footer",
+  );
   await page.goto(origin + "/");
   assert.equal(
-    await page.getByRole("link", { name: /RAG App.*new tab|RAG App.*nova aba/ }).getAttribute("href"),
-    "https://github.com/Jhonneg/py-rag",
+    await page.getByRole("link", { name: /Multiplayer Pong.*new tab|Multiplayer Pong.*nova aba/ }).getAttribute("href"),
+    "https://github.com/Jhonneg/PongJS",
   );
-  console.log("PASS RAG uses its verified source while the Streamlit demo is inaccessible");
+  console.log("PASS source-only cards use their verified source once; demo-less Streamlit link stays out");
   await page.goto(origin + "/projects/js");
   const lain = page.locator(".project-card").filter({
     has: page.getByRole("heading", { name: "Lain Chatbot", exact: true }),

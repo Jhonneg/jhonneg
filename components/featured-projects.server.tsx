@@ -7,9 +7,9 @@ import type { FeaturedProjectName } from "@/lib/i18n/dictionaries";
 import ProjectVideo from "./project-video.client";
 
 const featuredProjects: FeaturedProjectName[] = [
+  "Lina",
   "Multiplayer Pong",
-  "Lain Chatbot",
-  "RAG App",
+  "Face Recognition App",
 ];
 const allProjects = [...projectsData, ...projectsDataPython];
 

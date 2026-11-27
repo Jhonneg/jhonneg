@@ -7,9 +7,11 @@ const en = {
     whoami: {
       heading: "whoami",
       story:
-        "I'm Jhonne, a software developer focused on back-end work and curious about more than just making an application run: I like understanding how its parts communicate and what happens behind the interface. I started in web development, building interfaces and working with APIs. Over time, I went deeper into servers, databases, and infrastructure. That path led me to build projects ranging from a space-launch API with Node.js, MongoDB, and Docker to a multiplayer game that uses WebSockets for real-time communication. More recently, I've been exploring microservice architectures with TypeScript, messaging with RabbitMQ, and AI applications in Python, including RAG and agents that use tools. I'm transitioning into a software development career and finishing my degree in Systems Analysis and Development. I'm looking for my first opportunity in the field, where I can apply this hands-on experience to real projects and keep growing alongside other developers.",
-      practice:
-        "My personal projects include an Express API for space-flight data, a real-time multiplayer game with Socket.io, and Python experiments with RAG and language models. I’m looking to grow with a team working on backend or full-stack products.",
+        "I'm Jhonne, a software developer focused on back-end work and curious about more than just making an application run: I like understanding how its parts communicate and what happens behind the interface. I started in web development, building interfaces and working with APIs. Over time, I went deeper into servers, databases, and infrastructure.",
+      built:
+        "That path led me to build projects ranging from a space-launch API with Node.js, MongoDB, and Docker to a multiplayer game that uses WebSockets for real-time communication. More recently, I've been exploring microservice architectures with TypeScript, messaging with RabbitMQ, and AI applications in Python, including RAG and agents that use tools.",
+      goal:
+        "I'm transitioning into a software development career and finishing my degree in Systems Analysis and Development. I'm looking for my first opportunity in the field, where I can apply this hands-on experience to real projects and keep growing alongside a team working on back-end or full-stack products.",
     },
     stack: {
       heading: "cat stack.json",
@@ -159,9 +161,11 @@ const ptBR: Dictionary = {
     whoami: {
       heading: "whoami",
       story:
-        "Sou Jhonne, desenvolvedor de software com foco em back-end e uma curiosidade que vai além de fazer uma aplicação funcionar: gosto de entender como suas diferentes partes se comunicam e o que acontece por trás da interface. Comecei pelo desenvolvimento web, criando interfaces e consumindo APIs. Com o tempo, fui me aprofundando no lado dos servidores, bancos de dados e infraestrutura. Essa evolução me levou a construir desde uma API de lançamentos espaciais com Node.js, MongoDB e Docker até um jogo multiplayer com comunicação em tempo real usando WebSockets. Mais recentemente, venho explorando arquiteturas de microsserviços com TypeScript, mensageria com RabbitMQ e aplicações de IA em Python, incluindo RAG e agentes com ferramentas. Estou em transição de carreira e concluindo minha graduação em Análise e Desenvolvimento de Sistemas. Busco minha primeira oportunidade na área, onde possa transformar essa experiência prática em contribuições para projetos reais e continuar evoluindo com outros desenvolvedores.",
-      practice:
-        "Meus projetos pessoais incluem uma API Express para dados de voos espaciais, um jogo multiplayer em tempo real com Socket.io e experimentos em Python com RAG e modelos de linguagem. Quero crescer com uma equipe que trabalhe em produtos de back-end ou full-stack.",
+        "Sou Jhonne, desenvolvedor de software com foco em back-end e uma curiosidade que vai além de fazer uma aplicação funcionar: gosto de entender como suas diferentes partes se comunicam e o que acontece por trás da interface. Comecei pelo desenvolvimento web, criando interfaces e consumindo APIs. Com o tempo, fui me aprofundando no lado dos servidores, bancos de dados e infraestrutura.",
+      built:
+        "Essa evolução me levou a construir desde uma API de lançamentos espaciais com Node.js, MongoDB e Docker até um jogo multiplayer com comunicação em tempo real usando WebSockets. Mais recentemente, venho explorando arquiteturas de microsserviços com TypeScript, mensageria com RabbitMQ e aplicações de IA em Python, incluindo RAG e agentes com ferramentas.",
+      goal:
+        "Estou em transição de carreira e concluindo minha graduação em Análise e Desenvolvimento de Sistemas. Busco minha primeira oportunidade na área, onde possa transformar essa experiência prática em contribuições para projetos reais e continuar evoluindo com uma equipe que trabalhe em produtos de back-end ou full-stack.",
     },
     stack: {
       heading: "cat stack.json",

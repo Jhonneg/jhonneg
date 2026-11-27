@@ -51,7 +51,7 @@ const manifest = JSON.parse(
 );
 const action = Object.entries(manifest.node).find(([, entry]) =>
   Object.values(entry.workers).some((worker) =>
-    String(worker).includes("app/actions/locale.ts"),
+    decodeURIComponent(String(worker)).includes("app/actions/locale.ts"),
   ),
 );
 assert.ok(action, "Expected the development server locale action");

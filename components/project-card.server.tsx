@@ -65,17 +65,19 @@ export default function ProjectCard({
           {t.gallery.unavailable}
         </p>
       )}
-      <div className="flex flex-wrap items-center gap-2 border-t border-primary/20 p-3">
-        <a
-          href={sourceLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${t.gallery.source}: ${name} (${t.featured.newTab})`}
-          className="link link-warning ml-auto inline-flex min-h-11 items-center px-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-warning"
-        >
-          {t.gallery.source} ↗
-        </a>
-      </div>
+      {sourceLink !== anchorLink && (
+        <div className="flex flex-wrap items-center gap-2 border-t border-primary/20 p-3">
+          <a
+            href={sourceLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${t.gallery.source}: ${name} (${t.featured.newTab})`}
+            className="link link-warning ml-auto inline-flex min-h-11 items-center px-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-warning"
+          >
+            {t.gallery.source} ↗
+          </a>
+        </div>
+      )}
     </article>
   );
 }
