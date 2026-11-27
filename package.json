@@ -6,7 +6,11 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "check:static": "npm run lint && npm run typecheck",
+    "check:browser": "for f in scripts/check-*.mjs; do node \"$f\" || exit 1; done",
+    "check": "npm run check:static && npm run build"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
